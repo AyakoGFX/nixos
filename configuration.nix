@@ -139,6 +139,7 @@
    gnumake
    tldr
    xorg.xkill
+   qbittorrent
 
    alacritty # form this is my base apps for dwm ..etc
    brightnessctl
@@ -162,9 +163,6 @@
 
   # Emacs package installation via Nix with Vterm terminal 
   ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages ( epkgs: [ epkgs.vterm ] ))
-   emacsPackages.emacs-pgtk  # Emacs with dynamic module support
-   enchant
-   pkgconf
 
 # for theming apps 
    lxappearance
@@ -176,12 +174,6 @@
    papirus-icon-theme
 
   ];
-
-services.emacs = {
-    enable = true;
-    package = pkgs.emacs; # replace with emacs-gtk, or a version provided by the community overlay if desired.
-  };
-
 
 # dwm 
 services.xserver.windowManager.dwm.enable = true;
@@ -209,10 +201,6 @@ fonts = {
     };
   };
 };
-
-
-#Emacs
-
 
 # thunar file-manager
 programs.thunar.enable = true;
