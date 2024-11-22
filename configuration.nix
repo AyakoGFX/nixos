@@ -144,7 +144,8 @@
    fastfetch # just for backup
    libsForQt5.kwalletmanager
    openrgb
-
+   pulseaudioFull
+   (slstatus.overrideAttrs (_: { src = /home/ayako/dwm2/slstatus; }))
 
 # for theming apps 
    lxappearance
@@ -162,6 +163,28 @@ services.xserver.windowManager.dwm.enable = true;
 services.xserver.windowManager.dwm.package = pkgs.dwm.overrideAttrs {
   src = /home/ayako/dwm2;
 };
+
+fonts = {
+  packages = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
+    font-awesome
+    source-han-sans
+    source-han-sans-japanese
+    source-han-serif-japanese
+    (nerdfonts.override {fonts = ["JetBrainsMono"];})
+  ];
+  fontconfig = {
+    enable = true;
+    defaultFonts = {
+      monospace = ["JetBrainsMono LG M Regular Nerd Font Complete Mono"];
+      serif = ["Noto Serif" "Source Han Serif"];
+      sansSerif = ["Noto Sans" "Source Han Sans"];
+    };
+  };
+};
+
 
 #OpenRGB
 services.hardware.openrgb.enable = true;
