@@ -24,9 +24,6 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  #Bluetooth
-  hardware.bluetooth.enable = true;
-
   # Enable network manager applet
   programs.nm-applet.enable = true;
 
@@ -34,35 +31,19 @@
   time.timeZone = "Asia/Kolkata";
 
   # Select internationalisation properties.
-#  i18n.defaultLocale = "en_IN";
-#
-#  i18n.extraLocaleSettings = {
-#    LC_ADDRESS = "en_IN";
-#    LC_IDENTIFICATION = "en_IN";
-#    LC_MEASUREMENT = "en_IN";
-#    LC_MONETARY = "en_IN";
-#    LC_NAME = "en_IN";
-#    LC_NUMERIC = "en_IN";
-#    LC_PAPER = "en_IN";
-#    LC_TELEPHONE = "en_IN";
-#    LC_TIME = "en_IN";
-#  };
-#
-
-  i18n.defaultLocale = "en_US.utf8";
+  i18n.defaultLocale = "en_IN";
 
   i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.utf8";
-    LC_IDENTIFICATION = "en_US.utf8";
-    LC_MEASUREMENT = "en_US.utf8";
-    LC_MONETARY = "en_US.utf8";
-    LC_NAME = "en_US.utf8";
-    LC_NUMERIC = "en_US.utf8";
-    LC_PAPER = "en_US.utf8";
-    LC_TELEPHONE = "en_US.utf8";
-    LC_TIME = "en_US.utf8";
+    LC_ADDRESS = "en_IN";
+    LC_IDENTIFICATION = "en_IN";
+    LC_MEASUREMENT = "en_IN";
+    LC_MONETARY = "en_IN";
+    LC_NAME = "en_IN";
+    LC_NUMERIC = "en_IN";
+    LC_PAPER = "en_IN";
+    LC_TELEPHONE = "en_IN";
+    LC_TIME = "en_IN";
   };
-
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -115,82 +96,12 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run: #app
-  # $ nix search wget 
+  # List packages installed in system profile. To search, run:
+  # $ nix search wget
   environment.systemPackages = with pkgs; [
-   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-   wget
-   git
-   fish
-   gnumake
-   tldr
-   xorg.xkill
-
-   alacritty # form this is my base apps for dwm ..etc
-   brightnessctl
-   dmenu
-   emacs
-   rofi
-   sxhkd
-   picom
-   polkit_gnome
-   gparted
-   bitwarden-desktop
-   google-chrome
-   vlc
-   github-desktop
-   nitrogen
-   neofetch # essancial for nix users
-   fastfetch # just for backup
-   libsForQt5.kwalletmanager
-
-
-# for theming apps 
-   lxappearance
-   libsForQt5.qt5ct
-   kdePackages.qtstyleplugin-kvantum
-   libsForQt5.qtstyleplugin-kvantum
-   arc-theme
-   arc-kde-theme # for qt apps
-   papirus-icon-theme
-
+  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  #  wget
   ];
-
-# dwm 
-services.xserver.windowManager.dwm.enable = true;
-services.xserver.windowManager.dwm.package = pkgs.dwm.overrideAttrs {
-  src = /home/ayako/dwm2;
-};
-
-#Polkit
-security.polkit.enable = true;
-
-#Flatpak
-services.flatpak.enable = true;
-
-#xdg.portal
-xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-xdg.portal.enable = true;
-
-#keyring
-services.gnome.gnome-keyring.enable = true;
-security.pam.services.lightdm.enableGnomeKeyring = true;
-
-# Fish
-programs.fish.enable = true;
-users.defaultUserShell = pkgs.fish;
-
-# environment variable local for more >> https://nixos.wiki/wiki/Environment_variables
-environment.sessionVariables = rec {
-  XDG_CACHE_HOME  = "$HOME/.cache";
-  XDG_CONFIG_HOME = "$HOME/.config";
-  XDG_DATA_HOME   = "$HOME/.local/share";
-  XDG_STATE_HOME  = "$HOME/.local/state";
-};
-
-environment.variables = {
-  QT_QPA_PLATFORMTHEME= "qt5ct";
-};
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -203,7 +114,7 @@ environment.variables = {
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-   services.openssh.enable = true;
+  # services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
@@ -218,4 +129,5 @@ environment.variables = {
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
+
 }
