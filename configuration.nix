@@ -143,6 +143,7 @@
    neofetch # essancial for nix users
    fastfetch # just for backup
    libsForQt5.kwalletmanager
+   openrgb
 
 
 # for theming apps 
@@ -161,6 +162,9 @@ services.xserver.windowManager.dwm.enable = true;
 services.xserver.windowManager.dwm.package = pkgs.dwm.overrideAttrs {
   src = /home/ayako/dwm2;
 };
+
+#OpenRGB
+services.hardware.openrgb.enable = true;
 
 #Polkit
 security.polkit.enable = true;
