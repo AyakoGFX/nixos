@@ -118,7 +118,21 @@
   # List packages installed in system profile. To search, run: #app
   # $ nix search wget 
   environment.systemPackages = with pkgs; [
-   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+   vim 
+
+   bison # build essantials
+   flex
+   fontforge
+   makeWrapper
+   pkg-config
+   gnumake
+   gcc
+   libiconv
+   autoconf
+   automake
+   libtool # freetype calls glibtoolize
+   cmake
+
    wget
    git
    fish
@@ -129,7 +143,6 @@
    alacritty # form this is my base apps for dwm ..etc
    brightnessctl
    dmenu
-   emacs
    rofi
    sxhkd
    picom
@@ -147,6 +160,12 @@
    pulseaudioFull
    (slstatus.overrideAttrs (_: { src = /home/ayako/dwm2/slstatus; }))
 
+  # Emacs package installation via Nix with Vterm terminal 
+  ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages ( epkgs: [ epkgs.vterm ] ))
+   emacsPackages.emacs-pgtk  # Emacs with dynamic module support
+   enchant
+   pkgconf
+
 # for theming apps 
    lxappearance
    libsForQt5.qt5ct
@@ -157,6 +176,12 @@
    papirus-icon-theme
 
   ];
+
+services.emacs = {
+    enable = true;
+    package = pkgs.emacs; # replace with emacs-gtk, or a version provided by the community overlay if desired.
+  };
+
 
 # dwm 
 services.xserver.windowManager.dwm.enable = true;
@@ -184,6 +209,10 @@ fonts = {
     };
   };
 };
+
+
+#Emacs
+
 
 # thunar file-manager
 programs.thunar.enable = true;
