@@ -69,7 +69,7 @@
 
   # Enable the LXQT Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.lxqt.enable = true;
+#  services.xserver.desktopManager.lxqt.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -115,6 +115,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Install Steam.
+  programs.steam.enable = true;
+
   # List packages installed in system profile. To search, run: #app
   # $ nix search wget 
   environment.systemPackages = with pkgs; [
@@ -132,6 +135,7 @@
    automake
    libtool # freetype calls glibtoolize
    cmake
+   yad
 
    wget
    git
@@ -139,7 +143,12 @@
    gnumake
    tldr
    xorg.xkill
+   zip
+   unzip
    qbittorrent
+#   gnome.zenity
+   discord
+   lutris
 
    alacritty # form this is my base apps for dwm ..etc
    brightnessctl
@@ -152,6 +161,7 @@
    bitwarden-desktop
    google-chrome
    vlc
+   gimp
    github-desktop
    nitrogen
    neofetch # essancial for nix users
@@ -160,6 +170,7 @@
    openrgb
    pulseaudioFull
    (slstatus.overrideAttrs (_: { src = /home/ayako/dwm2/slstatus; }))
+   telegram-desktop
 
   # Emacs package installation via Nix with Vterm terminal 
   ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages ( epkgs: [ epkgs.vterm ] ))
@@ -173,6 +184,10 @@
    arc-kde-theme # for qt apps
    papirus-icon-theme
 
+  ];
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "qbittorrent-4.6.4"
   ];
 
 # dwm 
