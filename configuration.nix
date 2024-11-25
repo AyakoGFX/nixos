@@ -1,7 +1,8 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
+# https://github.com/ChrisTitusTech/nixos-titus.git
+# https://github.com/sytriz/dotfiles.git
 { config, pkgs, ... }:
 
 {
@@ -78,6 +79,8 @@ boot.loader.efi.efiSysMountPoint = "/boot";
 
   # Enable the LXQT Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.windowManager.awesome.enable = true;
+#  services.xserver.windowManager.nimdow.enable=true;
 #  services.xserver.desktopManager.lxqt.enable = true;
 
   # Configure keymap in X11
@@ -146,6 +149,7 @@ boot.loader.efi.efiSysMountPoint = "/boot";
    cmake
    os-prober
    ntfs3g
+   stow
 
    wget
    git
@@ -249,7 +253,7 @@ services.flatpak.enable = true;
 #xdg.portal
 xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 xdg.portal.enable = true;
-
+xdg.portal.config.common.default = "*";
 #keyring
 services.gnome.gnome-keyring.enable = true;
 security.pam.services.lightdm.enableGnomeKeyring = true;
