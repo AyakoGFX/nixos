@@ -133,7 +133,8 @@ boot.loader.efi.efiSysMountPoint = "/boot";
   # List packages installed in system profile. To search, run: #app
   # $ nix search wget 
   environment.systemPackages = with pkgs; [
-   vim 
+    vim
+    neovim
 
    bison # build essantials
    flex
@@ -161,10 +162,14 @@ boot.loader.efi.efiSysMountPoint = "/boot";
    unzip
    qbittorrent
    discord
-   lutris
+#   lutris
+    acpi
+    
 
    alacritty # form this is my base apps for dwm ..etc
    brightnessctl
+   appimage-run
+#   gearlever     #only on unstable channal
    dmenu
    rofi
    sxhkd
@@ -174,7 +179,14 @@ boot.loader.efi.efiSysMountPoint = "/boot";
    bitwarden-desktop
    google-chrome
    vlc
+   davinci-resolve
+   ffmpeg
+   youtube-dl
    gimp
+   zoxide
+   eza
+   trash-cli
+   ugrep
    github-desktop
    nitrogen
    neofetch # essancial for nix users
@@ -196,11 +208,20 @@ boot.loader.efi.efiSysMountPoint = "/boot";
    arc-theme
    arc-kde-theme # for qt apps
    papirus-icon-theme
+   arc-icon-theme 
 
   ];
 
+   hardware.opengl = {
+   enable = true;
+   extraPackages = with pkgs; [
+     rocmPackages.clr.icd
+   ];
+ };
+
   nixpkgs.config.permittedInsecurePackages = [
     "qbittorrent-4.6.4"
+    "python3.11-youtube-dl-2021.12.17"
   ];
 
 # dwm 
