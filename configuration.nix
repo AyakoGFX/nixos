@@ -1,5 +1,5 @@
 # System Configuration for NixOS
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports = [ ./hardware-configuration.nix ];
@@ -93,11 +93,14 @@
   services = {
     printing.enable = true;
     openssh.enable = true;
-    gvfs.enable = true;
     tumbler.enable = true;
     flatpak.enable = true;
     hardware.openrgb.enable = true;
     gnome.gnome-keyring.enable = true;
+    gvfs = {
+      enable = true;
+      package = lib.mkForce pkgs.gnome3.gvfs;
+    };
   };
 
   #
@@ -140,8 +143,8 @@
   #
   # SYSTEM PACKAGES
   #
+  nixpkgs.config.allowUnfree = true;
   nixpkgs.config = {
-    allowUnfree = true;
     permittedInsecurePackages = [
       "qbittorrent-4.6.4"
       "python3.11-youtube-dl-2021.12.17"
@@ -156,6 +159,8 @@
     vim
     neovim
     ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages (epkgs: [ epkgs.vterm ]))
+    aspell
+   # emacsPackages.jinx
 
     ###############################################
     #        DEVELOPMENT & BUILD TOOLS            #
