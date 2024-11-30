@@ -15,3 +15,18 @@ environment.systemPackages = with pkgs; [
 (slstatus.overrideAttrs (_: { src =/home/ayako/dwm2/slstatus ; }))
 firefox
 ];
+
+
+# dwm and slstatus
+# this is in configuration.nix
+ environment.systemPackages = with pkgs; [
+
+   (slstatus.overrideAttrs (_: { src = /home/ayako/dwm2/slstatus; }))
+
+  ];
+
+  # dwm 
+  services.xserver.windowManager.dwm.enable = true;
+  services.xserver.windowManager.dwm.package = pkgs.dwm.overrideAttrs {
+    src = /home/ayako/dwm2;
+  };
