@@ -1,6 +1,4 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+
 # https://github.com/ChrisTitusTech/nixos-titus.git
 # https://github.com/sytriz/dotfiles.git
 { config, pkgs, ... }:
@@ -12,17 +10,17 @@
     ];
 
   # Bootloader.
-#  boot.loader.systemd-boot.enable = true;
- # boot.loader.efi.canTouchEfiVariables = true;
+  #  boot.loader.systemd-boot.enable = true;
+  # boot.loader.efi.canTouchEfiVariables = true;
 
-boot.loader.grub.enable = true;
-boot.loader.grub.device = "nodev";
-boot.loader.grub.useOSProber = true;
-boot.loader.grub.efiSupport = true;
-boot.loader.efi.canTouchEfiVariables = true;
-boot.loader.efi.efiSysMountPoint = "/boot";
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "nodev";
+  boot.loader.grub.useOSProber = true;
+  boot.loader.grub.efiSupport = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.efiSysMountPoint = "/boot";
 
-# $ nixos-rebuild switch --install-bootloader
+  # $ nixos-rebuild switch --install-bootloader
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -44,20 +42,20 @@ boot.loader.efi.efiSysMountPoint = "/boot";
   time.timeZone = "Asia/Kolkata";
 
   # Select internationalisation properties.
-#  i18n.defaultLocale = "en_IN";
-#
-#  i18n.extraLocaleSettings = {
-#    LC_ADDRESS = "en_IN";
-#    LC_IDENTIFICATION = "en_IN";
-#    LC_MEASUREMENT = "en_IN";
-#    LC_MONETARY = "en_IN";
-#    LC_NAME = "en_IN";
-#    LC_NUMERIC = "en_IN";
-#    LC_PAPER = "en_IN";
-#    LC_TELEPHONE = "en_IN";
-#    LC_TIME = "en_IN";
-#  };
-#
+  #  i18n.defaultLocale = "en_IN";
+  #
+  #  i18n.extraLocaleSettings = {
+  #    LC_ADDRESS = "en_IN";
+  #    LC_IDENTIFICATION = "en_IN";
+  #    LC_MEASUREMENT = "en_IN";
+  #    LC_MONETARY = "en_IN";
+  #    LC_NAME = "en_IN";
+  #    LC_NUMERIC = "en_IN";
+  #    LC_PAPER = "en_IN";
+  #    LC_TELEPHONE = "en_IN";
+  #    LC_TIME = "en_IN";
+  #  };
+  #
 
   i18n.defaultLocale = "en_US.utf8";
 
@@ -80,8 +78,8 @@ boot.loader.efi.efiSysMountPoint = "/boot";
   # Enable the LXQT Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.windowManager.awesome.enable = true;
-#  services.xserver.windowManager.nimdow.enable=true;
-#  services.xserver.desktopManager.lxqt.enable = true;
+  #  services.xserver.windowManager.nimdow.enable=true;
+  #  services.xserver.desktopManager.lxqt.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -117,7 +115,7 @@ boot.loader.efi.efiSysMountPoint = "/boot";
     description = "ayako";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    #  thunderbird
+      #  thunderbird
     ];
   };
 
@@ -136,164 +134,169 @@ boot.loader.efi.efiSysMountPoint = "/boot";
     vim
     neovim
 
-   bison # build essantials
-   flex
-   fontforge
-   makeWrapper
-   pkg-config
-   gnumake
-   gcc
-   libiconv
-   autoconf
-   automake
-   libtool # freetype calls glibtoolize
-   cmake
-   os-prober
-   ntfs3g
-   stow
+    bison # build essantials
+    flex
+    fontforge
+    makeWrapper
+    pkg-config
+    gnumake
+    gcc
+    libiconv
+    autoconf
+    automake
+    libtool # freetype calls glibtoolize
+    cmake
+    os-prober
+    ntfs3g
+    stow
 
-   wget
-   git
-   fish
-   gnumake
-   tldr
-   xorg.xkill
-   zip
-   unzip
-   qbittorrent
-   discord
-#   lutris
+    wget
+    git
+    fish
+    gnumake
+    tldr
+    xorg.xkill
+    zip
+    unzip
+    p7zip
+    easyeffects
+    qbittorrent
+    discord
+    #   lutris
+    protontricks
     acpi
     
 
-   alacritty # form this is my base apps for dwm ..etc
-   brightnessctl
-   appimage-run
-#   gearlever     #only on unstable channal
-   dmenu
-   rofi
-   sxhkd
-   picom
-   polkit_gnome
-   gparted
-   bitwarden-desktop
-   google-chrome
-   vlc
-   davinci-resolve
-   ffmpeg
-   youtube-dl
-   gimp
-   zoxide
-   eza
-   trash-cli
-   ugrep
-   github-desktop
-   nitrogen
-   neofetch # essancial for nix users
-   fastfetch # just for backup
-   libsForQt5.kwalletmanager
-   openrgb
-   pulseaudioFull
-   (slstatus.overrideAttrs (_: { src = /home/ayako/dwm2/slstatus; }))
-   telegram-desktop
+    alacritty # form this is my base apps for dwm ..etc
+    brightnessctl
+    appimage-run
+    #   gearlever     #only on unstable channal
+    dmenu
+    rofi
+    sxhkd
+    picom
+    polkit_gnome
+    gparted
+    bitwarden-desktop
+    google-chrome
+    vlc
+    davinci-resolve
+    ffmpeg
+    handbrake
+    xarchiver
+    youtube-dl
+    gimp
+    zoxide
+    eza
+    trash-cli
+    ugrep
+    github-desktop
+    nitrogen
+    neofetch # essancial for nix users
+    fastfetch # just for backup
+    libsForQt5.kwalletmanager
+    openrgb
+    pulseaudioFull
+    (slstatus.overrideAttrs (_: { src = /home/ayako/dwm2/slstatus; }))
+    telegram-desktop
 
-  # Emacs package installation via Nix with Vterm terminal 
-  ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages ( epkgs: [ epkgs.vterm ] ))
+    # Emacs package installation via Nix with Vterm terminal 
+    ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages ( epkgs: [ epkgs.vterm ] ))
 
-# for theming apps 
-   lxappearance
-   libsForQt5.qt5ct
-   kdePackages.qtstyleplugin-kvantum
-   libsForQt5.qtstyleplugin-kvantum
-   arc-theme
-   arc-kde-theme # for qt apps
-   papirus-icon-theme
-   arc-icon-theme 
+    # for theming apps 
+    lxappearance
+    libsForQt5.qt5ct
+    kdePackages.qtstyleplugin-kvantum
+    libsForQt5.qtstyleplugin-kvantum
+    arc-theme
+    arc-kde-theme # for qt apps
+    papirus-icon-theme
+    arc-icon-theme 
 
   ];
 
-   hardware.opengl = {
-   enable = true;
-   extraPackages = with pkgs; [
-     rocmPackages.clr.icd
-   ];
- };
+  hardware.opengl = {
+    enable = true;
+    extraPackages = with pkgs; [
+      rocmPackages.clr.icd
+    ];
+  };
 
   nixpkgs.config.permittedInsecurePackages = [
     "qbittorrent-4.6.4"
     "python3.11-youtube-dl-2021.12.17"
   ];
 
-# dwm 
-services.xserver.windowManager.dwm.enable = true;
-services.xserver.windowManager.dwm.package = pkgs.dwm.overrideAttrs {
-  src = /home/ayako/dwm2;
-};
+  # dwm 
+  services.xserver.windowManager.dwm.enable = true;
+  services.xserver.windowManager.dwm.package = pkgs.dwm.overrideAttrs {
+    src = /home/ayako/dwm2;
+  };
 
-fonts = {
-  packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-emoji
-    font-awesome
-    source-han-sans
-    source-han-sans-japanese
-    source-han-serif-japanese
-    (nerdfonts.override {fonts = ["JetBrainsMono"];})
-  ];
-  fontconfig = {
-    enable = true;
-    defaultFonts = {
-      monospace = ["JetBrainsMono LG M Regular Nerd Font Complete Mono"];
-      serif = ["Noto Serif" "Source Han Serif"];
-      sansSerif = ["Noto Sans" "Source Han Sans"];
+  fonts = {
+    packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk
+      noto-fonts-emoji
+      font-awesome
+      source-han-sans
+      source-han-sans-japanese
+      source-han-serif-japanese
+      (nerdfonts.override {fonts = ["JetBrainsMono"];})
+    ];
+    fontconfig = {
+      enable = true;
+      defaultFonts = {
+        monospace = ["JetBrainsMono LG M Regular Nerd Font Complete Mono"];
+        serif = ["Noto Serif" "Source Han Serif"];
+        sansSerif = ["Noto Sans" "Source Han Sans"];
+      };
     };
   };
-};
 
-# thunar file-manager
-programs.thunar.enable = true;
-programs.xfconf.enable = true;
-programs.thunar.plugins = with pkgs.xfce; [
-  thunar-archive-plugin
-  thunar-volman
-];
-services.gvfs.enable = true; # Mount, trash, and other functionalities
-services.tumbler.enable = true; # Thumbnail support for images
+  # thunar file-manager
+  programs.thunar.enable = true;
+  programs.xfconf.enable = true;
+  programs.thunar.plugins = with pkgs.xfce; [
+    thunar-archive-plugin
+    thunar-volman
+  ];
+  services.gvfs.enable = true; # Mount, trash, and other functionalities
+  services.tumbler.enable = true; # Thumbnail support for images
 
 
-#OpenRGB
-services.hardware.openrgb.enable = true;
+  #OpenRGB
+  services.hardware.openrgb.enable = true;
 
-#Polkit
-security.polkit.enable = true;
+  #Polkit
+  security.polkit.enable = true;
 
-#Flatpak
-services.flatpak.enable = true;
+  #Flatpak
+  services.flatpak.enable = true;
 
-#xdg.portal
-xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-xdg.portal.enable = true;
-xdg.portal.config.common.default = "*";
-#keyring
-services.gnome.gnome-keyring.enable = true;
-security.pam.services.lightdm.enableGnomeKeyring = true;
+  #xdg.portal
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal.enable = true;
+  xdg.portal.config.common.default = "*";
+  #keyring
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.lightdm.enableGnomeKeyring = true;
 
-# Fish
-programs.fish.enable = true;
-users.defaultUserShell = pkgs.fish;
+  # Fish
+  programs.fish.enable = true;
+  users.defaultUserShell = pkgs.fish;
 
-# environment variable local for more >> https://nixos.wiki/wiki/Environment_variables
-environment.sessionVariables = rec {
-  XDG_CACHE_HOME  = "$HOME/.cache";
-  XDG_CONFIG_HOME = "$HOME/.config";
-  XDG_DATA_HOME   = "$HOME/.local/share";
-  XDG_STATE_HOME  = "$HOME/.local/state";
-};
+  # environment variable local for more >> https://nixos.wiki/wiki/Environment_variables
+  environment.sessionVariables = rec {
+    XDG_CACHE_HOME  = "$HOME/.cache";
+    XDG_CONFIG_HOME = "$HOME/.config";
+    XDG_DATA_HOME   = "$HOME/.local/share";
+    XDG_STATE_HOME  = "$HOME/.local/state";
+  };
 
-environment.variables = {
-  QT_QPA_PLATFORMTHEME= "qt5ct";
-};
+  environment.variables = {
+    QT_QPA_PLATFORMTHEME= "qt5ct";
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -306,7 +309,7 @@ environment.variables = {
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-   services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
