@@ -155,7 +155,7 @@
     ###############################################
     vim
     neovim
-
+    ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages (epkgs: [ epkgs.vterm ]))
 
     ###############################################
     #        DEVELOPMENT & BUILD TOOLS            #
@@ -268,14 +268,6 @@
     #           RGB CONTROL                       #
     ###############################################
     openrgb
-
-
-    ###############################################
-    #          EMACS & PLUGINS                    #
-    ###############################################
-    ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages (epkgs: [ 
-      epkgs.vterm 
-    ]))
 
 
     ###############################################
