@@ -150,15 +150,16 @@
 
   # Base system packages
   environment.systemPackages = with pkgs; [
-    #
-    # Text Editors
-    #
+    ###############################################
+    #           TEXT EDITORS                      #
+    ###############################################
     vim
     neovim
 
-    #
-    # Development & Build Tools
-    #
+
+    ###############################################
+    #        DEVELOPMENT & BUILD TOOLS            #
+    ###############################################
     gcc
     cmake
     git
@@ -173,9 +174,10 @@
     automake
     libtool
     
-    #
-    # System Utilities
-    #
+
+    ###############################################
+    #          SYSTEM UTILITIES                   #
+    ###############################################
     wget
     fish
     tldr
@@ -190,9 +192,10 @@
     brightnessctl
     appimage-run
 
-    #
-    # Desktop Environment & Window Management
-    #
+
+    ###############################################
+    #    DESKTOP ENVIRONMENT & WINDOW MANAGER     #
+    ###############################################
     alacritty
     dmenu
     rofi
@@ -201,9 +204,10 @@
     polkit_gnome
     nitrogen
 
-    #
-    # Audio & Video Tools
-    #
+
+    ###############################################
+    #         AUDIO & VIDEO TOOLS                 #
+    ###############################################
     easyeffects
     vlc
     davinci-resolve
@@ -211,30 +215,34 @@
     handbrake
     pulseaudioFull
 
-    #
-    # Internet & Communication
-    #
+
+    ###############################################
+    #      INTERNET & COMMUNICATION               #
+    ###############################################
     qbittorrent
     discord
     telegram-desktop
     google-chrome
     protontricks
 
-    #
-    # File Management & Archives
-    #
+
+    ###############################################
+    #      FILE MANAGEMENT & ARCHIVES             #
+    ###############################################
     xarchiver
     gparted
 
-    #
-    # Media & Graphics
-    #
+
+    ###############################################
+    #          MEDIA & GRAPHICS                   #
+    ###############################################
     youtube-dl
     gimp
 
-    #
-    # Shell Enhancements
-    #
+
+    ###############################################
+    #        SHELL ENHANCEMENTS                   #
+    ###############################################
     zoxide
     eza
     trash-cli
@@ -242,30 +250,37 @@
     neofetch
     fastfetch
 
-    #
-    # Security & Passwords
-    #
+
+    ###############################################
+    #        SECURITY & PASSWORDS                 #
+    ###############################################
     bitwarden-desktop
     libsForQt5.kwalletmanager
 
-    #
-    # Development Tools
-    #
+
+    ###############################################
+    #         DEVELOPMENT TOOLS                   #
+    ###############################################
     github-desktop
 
-    #
-    # RGB Control
-    #
+
+    ###############################################
+    #           RGB CONTROL                       #
+    ###############################################
     openrgb
 
-    #
-    # Emacs & Plugins
-    #
-    ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages (epkgs: [ epkgs.vterm ]))
 
-    #
-    # Theming & Appearance
-    #
+    ###############################################
+    #          EMACS & PLUGINS                    #
+    ###############################################
+    ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages (epkgs: [ 
+      epkgs.vterm 
+    ]))
+
+
+    ###############################################
+    #        THEMING & APPEARANCE                 #
+    ###############################################
     lxappearance
     libsForQt5.qt5ct
     kdePackages.qtstyleplugin-kvantum
