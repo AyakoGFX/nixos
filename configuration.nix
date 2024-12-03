@@ -1,4 +1,10 @@
 # System Configuration for NixOS
+# https://gitlab.com/jacinthsamuel/nixos/-/blob/master/configuration.nix?ref_type=heads
+# https://github.com/ValentinMENDIss/Dotfiles/tree/main/Distributions/NixOS
+# https://github.com/ChrisTitusTech/nixos-titus.git
+# https://github.com/sytriz/dotfiles.git
+
+
 { config, pkgs, lib, ... }:
 
 {
@@ -35,7 +41,7 @@
   hardware = {
     bluetooth.enable = true;
     pulseaudio.enable = false;
-    opengl = {
+    graphics = { # this is for Davinci Resolve err fix "Unsupported GPU Processing Mode"
       enable = true;
       extraPackages = with pkgs; [
         rocmPackages.clr.icd
@@ -97,11 +103,17 @@
     flatpak.enable = true;
     hardware.openrgb.enable = true;
     gnome.gnome-keyring.enable = true;
+    libinput.touchpad.naturalScrolling = true;
     gvfs = {
       enable = true;
-      package = lib.mkForce pkgs.gnome3.gvfs;
+      package = lib.mkForce pkgs.gnome.gvfs;
     };
   };
+#  Virtualization by virt-manager
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
+
 
   #
   # SECURITY AND SYSTEM FEATURES
@@ -115,13 +127,13 @@
   # USER CONFIGURATION
   #
   users = {
-    defaultUserShell = pkgs.fish;
     users.ayako = {
       isNormalUser = true;
       description = "ayako";
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = [ "networkmanager" "wheel" "libvirtd" "adbusers" ];
       packages = with pkgs; [];
     };
+    defaultUserShell = pkgs.fish;
   };
 
   #
@@ -129,7 +141,8 @@
   #
   programs = {
     fish.enable = true;
-    firefox.enable = true;
+    noisetorch.enable = true;
+    #firefox.enable = true;
     steam.enable = true;
     thunar = {
       enable = true;
@@ -147,7 +160,6 @@
   nixpkgs.config = {
     permittedInsecurePackages = [
       "qbittorrent-4.6.4"
-      "python3.11-youtube-dl-2021.12.17"
     ];
   };
 
@@ -158,9 +170,12 @@
     ###############################################
     vim
     neovim
+    code-cursor
     ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages (epkgs: [ epkgs.vterm ]))
-    aspell
-   # emacsPackages.jinx
+    # aspell
+    hunspell
+    hunspellDicts.en-us-large
+    emacsPackages.jinx
 
     ###############################################
     #        DEVELOPMENT & BUILD TOOLS            #
@@ -196,6 +211,7 @@
     acpi
     brightnessctl
     appimage-run
+    ripgrep
 
 
     ###############################################
@@ -219,6 +235,7 @@
     ffmpeg
     handbrake
     pulseaudioFull
+    obs-studio
 
 
     ###############################################
@@ -228,6 +245,7 @@
     discord
     telegram-desktop
     google-chrome
+    thunderbird
     protontricks
 
 
@@ -241,7 +259,7 @@
     ###############################################
     #          MEDIA & GRAPHICS                   #
     ###############################################
-    youtube-dl
+    yt-dlp
     gimp
 
 
@@ -288,12 +306,25 @@
     arc-icon-theme
   ];
 
+# Power-Management
+services.auto-cpufreq.enable = true;
+services.auto-cpufreq.settings = {
+  battery = {
+     governor = "powersave";
+     turbo = "never";
+  };
+  charger = {
+     governor = "performance";
+     turbo = "auto";
+  };
+};
+
   #
   # FONTS
   #
   fonts = {
     packages = with pkgs; [
-      noto-fonts noto-fonts-cjk noto-fonts-emoji font-awesome
+      noto-fonts noto-fonts-cjk-sans noto-fonts-emoji font-awesome
       source-han-sans source-han-sans-japanese source-han-serif-japanese
       (nerdfonts.override {fonts = ["JetBrainsMono"];})
     ];
@@ -329,5 +360,5 @@
   };
 
   # System State Version
-  system.stateVersion = "24.05";
+  system.stateVersion = "24.11";
 }
