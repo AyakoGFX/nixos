@@ -10,7 +10,7 @@
 {
   imports = [ ./hardware-configuration.nix
               ./vm.nix
-              # ./pci.nix
+              ./pci.nix
  ];
 
   #

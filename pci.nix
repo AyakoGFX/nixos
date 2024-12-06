@@ -1,10 +1,8 @@
-# boot.kernelParams = [ "amd_iommu=on" ]
-  # 1002:73ff,1002:ab28
 let
-  # RTX 3070 Ti
+  # Vega GPU and associated devices
   gpuIDs = [
-    "1002:73ff" # Graphics
-    "1002:ab28" # Audio
+    "1002:1638" # Vega GPU
+    "1002:1637" # Vega Audio
   ];
 in { pkgs, lib, config, ... }: {
   options.vfio.enable = with lib;
@@ -18,23 +16,30 @@ in { pkgs, lib, config, ... }: {
         "vfio"
         "vfio_iommu_type1"
         # "vfio_virqfd"
-        "amdgpu"
-
-        # "nvidia"
-        # "nvidia_modeset"
-        # "nvidia_uvm"
-        # "nvidia_drm"
+        # Uncomment "amdgpu" only if you're NOT blacklisting it
+        # "amdgpu"
       ];
 
       kernelParams = [
-        # enable IOMMU
+        # Enable IOMMU
         "amd_iommu=on"
+       # Helps prevent screentearing and other issues.
+        "iommu=pt"
       ] ++ lib.optional cfg.enable
-        # isolate the GPU
+        # Isolate the GPU
         ("vfio-pci.ids=" + lib.concatStringsSep "," gpuIDs);
     };
 
+    # Uncomment this if using GPU for the host
     # hardware.opengl.enable = true;
-    # virtualisation.spiceUSBRedirection.enable = true;
+
+    # Optional virtualization settings
+   # virtualisation.spiceUSBRedirection.enable = true;
+
+  # boot.blacklistedKernelModules = [
+    # "amdgpu"
+    # "snd_hda_intel"
+  # ];   
+
   };
 }
