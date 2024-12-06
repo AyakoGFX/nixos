@@ -3,12 +3,15 @@
 # https://github.com/ValentinMENDIss/Dotfiles/tree/main/Distributions/NixOS
 # https://github.com/ChrisTitusTech/nixos-titus.git
 # https://github.com/sytriz/dotfiles.git
-
+# https://github.com/TechsupportOnHold
 
 { config, pkgs, lib, ... }:
 
 {
-  imports = [ ./hardware-configuration.nix ];
+  imports = [ ./hardware-configuration.nix
+              ./vm.nix
+              # ./pci.nix
+ ];
 
   #
   # BOOT CONFIGURATION
@@ -109,10 +112,8 @@
       package = lib.mkForce pkgs.gnome.gvfs;
     };
   };
-#  Virtualization by virt-manager
-  virtualisation.libvirtd.enable = true;
-  programs.virt-manager.enable = true;
-  virtualisation.spiceUSBRedirection.enable = true;
+
+
 
 
   #
@@ -130,7 +131,7 @@
     users.ayako = {
       isNormalUser = true;
       description = "ayako";
-      extraGroups = [ "networkmanager" "wheel" "libvirtd" "adbusers" ];
+      extraGroups = [ "networkmanager" "wheel" "adbusers" ];
       packages = with pkgs; [];
     };
     defaultUserShell = pkgs.fish;
@@ -141,9 +142,9 @@
   #
   programs = {
     fish.enable = true;
-    noisetorch.enable = true;
+    #noisetorch.enable = true;
     #firefox.enable = true;
-    steam.enable = true;
+    # steam.enable = true;
     thunar = {
       enable = true;
       plugins = with pkgs.xfce; [
@@ -202,6 +203,8 @@
     fish
     tldr
     xorg.xkill
+    termdown
+    gdu
     zip
     unzip
     p7zip
@@ -212,7 +215,7 @@
     brightnessctl
     appimage-run
     ripgrep
-
+    pciutils
 
     ###############################################
     #    DESKTOP ENVIRONMENT & WINDOW MANAGER     #
@@ -229,12 +232,12 @@
     ###############################################
     #         AUDIO & VIDEO TOOLS                 #
     ###############################################
-    easyeffects
     vlc
-    davinci-resolve
+#    davinci-resolve
     ffmpeg
     handbrake
     pulseaudioFull
+    pavucontrol
     obs-studio
 
 
@@ -260,7 +263,8 @@
     #          MEDIA & GRAPHICS                   #
     ###############################################
     yt-dlp
-    gimp
+    #gimp
+    # inkscape-with-extensions
 
 
     ###############################################
