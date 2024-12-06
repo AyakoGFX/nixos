@@ -15,7 +15,6 @@ in { pkgs, lib, config, ... }: {
         "vfio_pci"
         "vfio"
         "vfio_iommu_type1"
-        # "vfio_virqfd"
         # Uncomment "amdgpu" only if you're NOT blacklisting it
         # "amdgpu"
       ];
@@ -23,23 +22,26 @@ in { pkgs, lib, config, ... }: {
       kernelParams = [
         # Enable IOMMU
         "amd_iommu=on"
-       # Helps prevent screentearing and other issues.
+        # Helps prevent screen tearing and other issues
         "iommu=pt"
       ] ++ lib.optional cfg.enable
-        # Isolate the GPU
+        # Isolate the GPU using dynamic IDs
         ("vfio-pci.ids=" + lib.concatStringsSep "," gpuIDs);
     };
 
-    # Uncomment this if using GPU for the host
+    # Uncomment if you plan to use the GPU for the host
     # hardware.opengl.enable = true;
 
     # Optional virtualization settings
-   # virtualisation.spiceUSBRedirection.enable = true;
+    # virtualisation.spiceUSBRedirection.enable = true;
 
-  # boot.blacklistedKernelModules = [
-    # "amdgpu"
-    # "snd_hda_intel"
-  # ];   
+    boot.blacklistedKernelModules = [ "amdgpu" ];
 
+    # Uncomment to blacklist specific kernel modules
+    # boot.blacklistedKernelModules = [
+    #   "amdgpu"
+    #   "snd_hda_intel"
+    # ];   
   };
 }
+  boot.initrd.kernelModules = [ "vfio_pci" ]
