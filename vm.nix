@@ -14,6 +14,11 @@
     spice-protocol
     win-virtio
     win-spice
+    qemu
+    qemu_kvm
+    libvirt
+    bridge-utils
+    OVMF
     pkgs.adwaita-icon-theme
   ];
 
@@ -29,8 +34,8 @@
     };
     spiceUSBRedirection.enable = true;
   };
+  hardware.graphics.enable = true;
   services.spice-vdagentd.enable = true;
-
 }
 
 

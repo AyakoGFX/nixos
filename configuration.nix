@@ -10,7 +10,7 @@
 {
   imports = [ ./hardware-configuration.nix
               ./vm.nix
-              # ./pci.nix
+              ./pci.nix
               # ./pci2.nix
  ];
 
@@ -113,8 +113,6 @@
       package = lib.mkForce pkgs.gnome.gvfs;
     };
   };
-
-
 
 
   #

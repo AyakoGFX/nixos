@@ -1,5 +1,5 @@
-# https://astrid.tech/2022/09/22/0/nixos-gpu-vfio/
-{ pkgs, lib, config, ... }: {
+{ config, pkgs, lib, ... }: 
+{
   boot = {
     initrd.kernelModules = [
       "vfio_pci"
@@ -11,14 +11,17 @@
       # Enable IOMMU
       "amd_iommu=on"
       "iommu=pt"
-      # Blacklist conflicting drivers
-      "modprobe.blacklist=amdgpu,"
-      # Bind GPU and HDMI audio to vfio-pci
+
+      # Pass GPU and audio IDs to vfio-pci
       "vfio-pci.ids=1002:73ff,1002:ab28"
+
+      # Blacklist conflicting drivers
+      "modprobe.blacklist=amdgpu,snd_hda_intel"
     ];
   };
 
   boot.blacklistedKernelModules = [
     "amdgpu"
+    "snd_hda_intel"
   ];
-}
+};
