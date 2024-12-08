@@ -5,13 +5,19 @@
 # https://github.com/sytriz/dotfiles.git
 # https://github.com/TechsupportOnHold
 # https://youtu.be/CwfKlX3rA6E?si=CGSmYdMGPsdEmqA9
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
-  imports = [ ./hardware-configuration.nix
-              ./vm.nix
-              # ./pci.nix
- ];
+  imports = [
+    ./hardware-configuration.nix
+    ./vm.nix
+    # ./pci.nix
+  ];
 
   #
   # BOOT CONFIGURATION
@@ -44,7 +50,8 @@
   hardware = {
     bluetooth.enable = true;
     pulseaudio.enable = false;
-    graphics = { # this is for Davinci Resolve err fix "Unsupported GPU Processing Mode"
+    graphics = {
+      # this is for Davinci Resolve err fix "Unsupported GPU Processing Mode"
       enable = true;
       extraPackages = with pkgs; [
         rocmPackages.clr.icd
@@ -113,7 +120,6 @@
     };
   };
 
-
   #
   # SECURITY AND SYSTEM FEATURES
   #
@@ -129,8 +135,12 @@
     users.ayako = {
       isNormalUser = true;
       description = "ayako";
-      extraGroups = [ "networkmanager" "wheel" "adbusers" ];
-      packages = with pkgs; [];
+      extraGroups = [
+        "networkmanager"
+        "wheel"
+        "adbusers"
+      ];
+      packages = with pkgs; [ ];
     };
     defaultUserShell = pkgs.fish;
   };
@@ -175,7 +185,7 @@
     hunspell
     hunspellDicts.en-us-large
     emacsPackages.jinx
-    emacsPackages.nixfmt
+    nixfmt-rfc-style
     # nixd
     nil
 
@@ -195,7 +205,6 @@
     autoconf
     automake
     libtool
-    
 
     ###############################################
     #          SYSTEM UTILITIES                   #
@@ -229,18 +238,16 @@
     polkit_gnome
     nitrogen
 
-
     ###############################################
     #         AUDIO & VIDEO TOOLS                 #
     ###############################################
     vlc
-#    davinci-resolve
+    #    davinci-resolve
     ffmpeg
     handbrake
     pulseaudioFull
     pavucontrol
     obs-studio
-
 
     ###############################################
     #      INTERNET & COMMUNICATION               #
@@ -252,13 +259,11 @@
     thunderbird
     protontricks
 
-
     ###############################################
     #      FILE MANAGEMENT & ARCHIVES             #
     ###############################################
     xarchiver
     gparted
-
 
     ###############################################
     #          MEDIA & GRAPHICS                   #
@@ -266,7 +271,6 @@
     yt-dlp
     #gimp
     # inkscape-with-extensions
-
 
     ###############################################
     #        SHELL ENHANCEMENTS                   #
@@ -278,25 +282,21 @@
     neofetch
     fastfetch
 
-
     ###############################################
     #        SECURITY & PASSWORDS                 #
     ###############################################
     bitwarden-desktop
     libsForQt5.kwalletmanager
 
-
     ###############################################
     #         DEVELOPMENT TOOLS                   #
     ###############################################
     github-desktop
 
-
     ###############################################
     #           RGB CONTROL                       #
     ###############################################
     openrgb
-
 
     ###############################################
     #        THEMING & APPEARANCE                 #
@@ -311,34 +311,45 @@
     arc-icon-theme
   ];
 
-# Power-Management
-services.auto-cpufreq.enable = true;
-services.auto-cpufreq.settings = {
-  battery = {
-     governor = "powersave";
-     turbo = "never";
+  # Power-Management
+  services.auto-cpufreq.enable = true;
+  services.auto-cpufreq.settings = {
+    battery = {
+      governor = "powersave";
+      turbo = "never";
+    };
+    charger = {
+      governor = "performance";
+      turbo = "auto";
+    };
   };
-  charger = {
-     governor = "performance";
-     turbo = "auto";
-  };
-};
 
   #
   # FONTS
   #
   fonts = {
     packages = with pkgs; [
-      noto-fonts noto-fonts-cjk-sans noto-fonts-emoji font-awesome
-      source-han-sans source-han-sans-japanese source-han-serif-japanese
-      (nerdfonts.override {fonts = ["JetBrainsMono"];})
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-emoji
+      font-awesome
+      source-han-sans
+      source-han-sans-japanese
+      source-han-serif-japanese
+      (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     ];
     fontconfig = {
       enable = true;
       defaultFonts = {
-        monospace = ["JetBrainsMono LG M Regular Nerd Font Complete Mono"];
-        serif = ["Noto Serif" "Source Han Serif"];
-        sansSerif = ["Noto Sans" "Source Han Sans"];
+        monospace = [ "JetBrainsMono LG M Regular Nerd Font Complete Mono" ];
+        serif = [
+          "Noto Serif"
+          "Source Han Serif"
+        ];
+        sansSerif = [
+          "Noto Sans"
+          "Source Han Sans"
+        ];
       };
     };
   };
@@ -354,10 +365,10 @@ services.auto-cpufreq.settings = {
 
   environment = {
     sessionVariables = rec {
-      XDG_CACHE_HOME  = "$HOME/.cache";
+      XDG_CACHE_HOME = "$HOME/.cache";
       XDG_CONFIG_HOME = "$HOME/.config";
-      XDG_DATA_HOME   = "$HOME/.local/share";
-      XDG_STATE_HOME  = "$HOME/.local/state";
+      XDG_DATA_HOME = "$HOME/.local/share";
+      XDG_STATE_HOME = "$HOME/.local/state";
     };
     variables = {
       QT_QPA_PLATFORMTHEME = "qt5ct";
