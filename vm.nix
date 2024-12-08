@@ -4,7 +4,7 @@
   # Enable dconf (System Management Tool)
   programs.dconf.enable = true;
 
-  users.users.ayako.extraGroups = [ "libvirtd" ];
+  users.users.ayako.extraGroups = [ "libvirtd" "kvm" "qemu" "audio" ];
 
   # Install necessary packages
   environment.systemPackages = with pkgs; [

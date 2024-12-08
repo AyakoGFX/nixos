@@ -4,14 +4,13 @@
 # https://github.com/ChrisTitusTech/nixos-titus.git
 # https://github.com/sytriz/dotfiles.git
 # https://github.com/TechsupportOnHold
-
+# https://youtu.be/CwfKlX3rA6E?si=CGSmYdMGPsdEmqA9
 { config, pkgs, lib, ... }:
 
 {
   imports = [ ./hardware-configuration.nix
               ./vm.nix
-              ./pci.nix
-              # ./pci2.nix
+              # ./pci.nix
  ];
 
   #
@@ -176,6 +175,9 @@
     hunspell
     hunspellDicts.en-us-large
     emacsPackages.jinx
+    emacsPackages.nixfmt
+    # nixd
+    nil
 
     ###############################################
     #        DEVELOPMENT & BUILD TOOLS            #
