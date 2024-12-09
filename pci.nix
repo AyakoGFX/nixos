@@ -1,5 +1,11 @@
 # https://astrid.tech/2022/09/22/0/nixos-gpu-vfio/
-{ pkgs, lib, config, ... }: {
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
+{
   boot = {
     initrd.kernelModules = [
       "vfio_pci"

@@ -16,6 +16,7 @@
   imports = [
     ./hardware-configuration.nix
     ./vm.nix
+    ./DE-WM.nix
     # ./pci.nix
   ];
 
