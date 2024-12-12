@@ -219,6 +219,7 @@
     zip
     unzip
     p7zip
+    peazip
     os-prober
     ntfs3g
     stow
