@@ -5,6 +5,7 @@
 # https://github.com/sytriz/dotfiles.git
 # https://github.com/TechsupportOnHold
 # https://youtu.be/CwfKlX3rA6E?si=CGSmYdMGPsdEmqA9
+# TODO xdg.mime.defaultApplications
 {
   config,
   pkgs,
