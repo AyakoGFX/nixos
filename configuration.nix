@@ -18,6 +18,7 @@
     ./hardware-configuration.nix
     ./vm.nix
     ./DE-WM.nix
+    ./defaults-apps.nix
     # ./pci.nix
   ];
 
@@ -222,6 +223,7 @@
     rar
     unzip
     p7zip
+    findutils
     peazip
     os-prober
     ntfs3g
@@ -241,6 +243,7 @@
     sxhkd
     picom
     polkit_gnome
+    eog
     nitrogen
 
     ###############################################
@@ -376,6 +379,8 @@
       XDG_STATE_HOME = "$HOME/.local/state";
     };
     variables = {
+      EDITOR = "emacsclient -c";
+      VISUAL = "emacsclient -c";
       QT_QPA_PLATFORMTHEME = "qt5ct";
     };
   };

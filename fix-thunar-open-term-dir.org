@@ -1,0 +1,3 @@
+Thunar > edit > configure custom actions > [DB] on "open terminal here" > change command to "alacrity"
+
+[DB] = double click
