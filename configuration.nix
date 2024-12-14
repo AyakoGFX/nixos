@@ -153,7 +153,7 @@
     fish.enable = true;
     #noisetorch.enable = true;
     #firefox.enable = true;
-    # steam.enable = true;
+    steam.enable = true;
     thunar = {
       enable = true;
       plugins = with pkgs.xfce; [
@@ -217,6 +217,8 @@
     termdown
     gdu
     zip
+    unrar
+    rar
     unzip
     p7zip
     os-prober
