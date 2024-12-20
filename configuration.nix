@@ -100,6 +100,7 @@
     enable = true;
     displayManager.lightdm.enable = true;
     windowManager.awesome.enable = true;
+    libinput.mouse.accelProfile = "flat"; # disable mouse acceleration
     xkb = {
       layout = "us";
       variant = "";
