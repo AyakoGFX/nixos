@@ -155,7 +155,7 @@
   programs = {
     fish.enable = true;
     #noisetorch.enable = true;
-    #firefox.enable = true;
+    firefox.enable = true;
     steam.enable = true;
     thunar = {
       enable = true;
@@ -246,6 +246,7 @@
     polkit_gnome
     eog
     nitrogen
+    normcap
 
     ###############################################
     #         AUDIO & VIDEO TOOLS                 #
