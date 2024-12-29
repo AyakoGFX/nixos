@@ -1,4 +1,5 @@
 # https://astrid.tech/2022/09/22/0/nixos-gpu-vfio/
+# TODO look into cpu-pinning 
 {
   pkgs,
   lib,
