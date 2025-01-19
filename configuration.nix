@@ -6,6 +6,8 @@
 # https://github.com/TechsupportOnHold
 # https://youtu.be/CwfKlX3rA6E?si=CGSmYdMGPsdEmqA9
 # TODO xdg.mime.defaultApplications
+# sudo nixos-rebuild switch -I nixos-config=~/nixos/configuration.nix
+
 {
   config,
   pkgs,
@@ -16,10 +18,10 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./vm.nix
+ #  ./vm.nix
     ./DE-WM.nix
     ./defaults-apps.nix
-    # ./pci.nix
+ #  ./pci.nix
   ];
 
   #
@@ -156,7 +158,7 @@
     fish.enable = true;
     #noisetorch.enable = true;
     firefox.enable = true;
-    steam.enable = true;
+  #  steam.enable = true;
     thunar = {
       enable = true;
       plugins = with pkgs.xfce; [
@@ -254,7 +256,7 @@
     vlc
     #    davinci-resolve
     ffmpeg
-    handbrake
+   # handbrake
     pulseaudioFull
     pavucontrol
     obs-studio
@@ -263,16 +265,16 @@
     #      INTERNET & COMMUNICATION               #
     ###############################################
     qbittorrent
-    discord
-    telegram-desktop
+ #   discord
+  #  telegram-desktop
     google-chrome
-    thunderbird
-    protontricks
+  #  thunderbird
+  #  protontricks
 
     ###############################################
     #      FILE MANAGEMENT & ARCHIVES             #
     ###############################################
-    xarchiver
+ #   xarchiver
     gparted
 
     ###############################################
