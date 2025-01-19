@@ -7,6 +7,7 @@
 # https://youtu.be/CwfKlX3rA6E?si=CGSmYdMGPsdEmqA9
 # TODO xdg.mime.defaultApplications
 # sudo nixos-rebuild switch -I nixos-config=~/nixos/configuration.nix
+# sudo nixos-rebuild --install-bootloader boot
 
 {
   config,
