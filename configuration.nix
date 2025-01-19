@@ -7,8 +7,9 @@
 # https://youtu.be/CwfKlX3rA6E?si=CGSmYdMGPsdEmqA9
 # TODO xdg.mime.defaultApplications
 # sudo nixos-rebuild switch -I nixos-config=~/nixos/configuration.nix
+# sudo nixos-rebuild switch -I nixos-config=/home/ayako/nixos/configuration.nix
 # sudo nixos-rebuild --install-bootloader boot
-
+# sudo nixos-rebuild --install-bootloader boot -I nixos-config=/home/ayako/nixos/configuration.nix
 {
   config,
   pkgs,
@@ -176,6 +177,7 @@
   nixpkgs.config = {
     permittedInsecurePackages = [
       "qbittorrent-4.6.4"
+      "archiver-3.5.1"
     ];
   };
 
