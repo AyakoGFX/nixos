@@ -189,6 +189,8 @@
     vim
     neovim
     code-cursor
+    helix
+    tree
     ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages (epkgs: [ epkgs.vterm ]))
     # aspell
     hunspell
