@@ -23,6 +23,7 @@
  #  ./vm.nix
     ./DE-WM.nix
     ./defaults-apps.nix
+    ./py.nix
  #  ./pci.nix
   ];
 
@@ -104,7 +105,6 @@
     enable = true;
     displayManager.lightdm.enable = true;
     windowManager.awesome.enable = true;
-    libinput.mouse.accelProfile = "flat"; # disable mouse acceleration
     xkb = {
       layout = "us";
       variant = "";
@@ -122,6 +122,7 @@
     hardware.openrgb.enable = true;
     gnome.gnome-keyring.enable = true;
     libinput.touchpad.naturalScrolling = true;
+    libinput.mouse.accelProfile = "flat"; # disable mouse acceleration
     gvfs = {
       enable = true;
       package = lib.mkForce pkgs.gnome.gvfs;
@@ -271,7 +272,7 @@
     ###############################################
     qbittorrent
  #   discord
-  #  telegram-desktop
+   telegram-desktop
     google-chrome
   #  thunderbird
   #  protontricks

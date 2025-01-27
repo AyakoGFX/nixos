@@ -1,0 +1,17 @@
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
+{
+
+  environment.systemPackages = with pkgs; [
+    # python310          # Python 3.10 (adjust version as needed)
+    # python310Packages.pip
+    # python310Packages.virtualenv
+    pipx
+    python313
+    virtualenv
+  ];
+}
