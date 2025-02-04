@@ -20,7 +20,7 @@
 {
   imports = [
     ./hardware-configuration.nix
- #  ./vm.nix
+    ./vm.nix
     ./DE-WM.nix
     ./defaults-apps.nix
     ./py.nix
@@ -190,6 +190,7 @@
     vim
     neovim
     code-cursor
+    obsidian
     helix
     tree
     ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages (epkgs: [ epkgs.vterm ]))
@@ -222,6 +223,7 @@
     #          SYSTEM UTILITIES                   #
     ###############################################
     wget
+    syncthing
     fish
     tldr
     xorg.xkill
@@ -341,6 +343,10 @@
       turbo = "auto";
     };
   };
+
+# syncthing
+  services.syncthing.systemService = true;
+  services.syncthing.enable = true;
 
   #
   # FONTS
