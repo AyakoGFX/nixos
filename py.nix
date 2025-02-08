@@ -12,6 +12,7 @@
     # python310Packages.virtualenv
     pipx
     python313
+    python313Packages.pip
     virtualenv
   ];
 }

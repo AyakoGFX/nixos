@@ -158,12 +158,12 @@
   # PROGRAM CONFIGURATIONS
   #
   programs = {
-    fish.enable = true;
-    #noisetorch.enable = true;
-    firefox.enable = true;
+  fish.enable = true;
+  #noisetorch.enable = true;
+  firefox.enable = true;
   #  steam.enable = true;
-    thunar = {
-      enable = true;
+  thunar = {
+    enable = true;
       plugins = with pkgs.xfce; [
         thunar-archive-plugin
         thunar-volman
@@ -201,6 +201,9 @@
     nixfmt-rfc-style
     # nixd
     nil
+    libsForQt5.kdenlive
+    blanket
+    
 
     ###############################################
     #        DEVELOPMENT & BUILD TOOLS            #
@@ -223,7 +226,6 @@
     #          SYSTEM UTILITIES                   #
     ###############################################
     wget
-    syncthing
     fish
     tldr
     xorg.xkill
@@ -273,8 +275,8 @@
     #      INTERNET & COMMUNICATION               #
     ###############################################
     qbittorrent
- #   discord
-   telegram-desktop
+    discord
+    telegram-desktop
     google-chrome
   #  thunderbird
   #  protontricks
@@ -345,8 +347,8 @@
   };
 
 # syncthing
-  services.syncthing.systemService = true;
-  services.syncthing.enable = true;
+  # services.syncthing.systemService = true;
+  # services.syncthing.enable = true;
 
   #
   # FONTS
