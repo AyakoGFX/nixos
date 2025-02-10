@@ -12,7 +12,8 @@
     "application/x-tar" = "peazip-extract-desktop.desktop";
     "application/gzip" = "peazip-extract-desktop.desktop";
     "application/x-bzip2" = "peazip-extract-desktop.desktop";
-    "application/pdf" = "google-chrome-stable.desktop";
+    # "application/pdf" = "google-chrome-stable.desktop";
+    "application/pdf" = "firefox.desktop";
     "x-scheme-handler/terminal" = "alacritty.desktop";
     "inode/directory" = "thunar.desktop";
 

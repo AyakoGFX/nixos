@@ -193,7 +193,7 @@
     obsidian
     helix
     tree
-    ((pkgs.emacsPackagesFor pkgs.emacs).emacsWithPackages (epkgs: [ epkgs.vterm ]))
+    ((pkgs.emacsPackagesFor pkgs.emacs30).emacsWithPackages (epkgs: [ epkgs.vterm ]))
     # aspell
     hunspell
     hunspellDicts.en-us-large
@@ -251,6 +251,7 @@
     #    DESKTOP ENVIRONMENT & WINDOW MANAGER     #
     ###############################################
     alacritty
+    warp-terminal
     dmenu
     rofi
     sxhkd
@@ -400,6 +401,7 @@
       EDITOR = "emacsclient -c";
       VISUAL = "emacsclient -c";
       QT_QPA_PLATFORMTHEME = "qt5ct";
+      QT_QPA_PLATFORM= "xcb";
     };
   };
 
