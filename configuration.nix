@@ -8,7 +8,7 @@
 # TODO xdg.mime.defaultApplications
 # sudo nixos-rebuild switch -I nixos-config=~/nixos/configuration.nix
 # sudo nixos-rebuild switch -I nixos-config=/home/ayako/nixos/configuration.nix
-# sudo nixos-rebuild --install-bootloader boot
+# sudo nixos-rebuild --install-lbootloader boot
 # sudo nixos-rebuild --install-bootloader boot -I nixos-config=/home/ayako/nixos/configuration.nix
 {
   config,
@@ -24,7 +24,8 @@
     ./DE-WM.nix
     ./defaults-apps.nix
     ./py.nix
- #  ./pci.nix
+    # ./ai.nix
+    # ./pci.nix
   ];
 
   #
@@ -50,7 +51,10 @@
     hostName = "nixos";
     networkmanager.enable = true;
   };
-  programs.nm-applet.enable = true;
+
+nix.settings = {
+  experimental-features = ["nix-command" "flakes"];
+};
 
   #
   # HARDWARE AND SOUND
@@ -114,7 +118,9 @@
   #
   # SYSTEM SERVICES
   #
+
   services = {
+    locate.enable = true;
     printing.enable = true;
     openssh.enable = true;
     tumbler.enable = true;
@@ -159,6 +165,7 @@
   #
   programs = {
   fish.enable = true;
+  nm-applet.enable = true;
   #noisetorch.enable = true;
   firefox.enable = true;
   #  steam.enable = true;
@@ -194,12 +201,11 @@
     helix
     tree
     ((pkgs.emacsPackagesFor pkgs.emacs30).emacsWithPackages (epkgs: [ epkgs.vterm ]))
+    emacsPackages.jinx
     # aspell
     hunspell
     hunspellDicts.en-us-large
-    emacsPackages.jinx
     nixfmt-rfc-style
-    # nixd
     nil
     libsForQt5.kdenlive
     blanket
@@ -257,6 +263,7 @@
     sxhkd
     picom
     polkit_gnome
+    gnome-font-viewer
     eog
     nitrogen
     normcap
