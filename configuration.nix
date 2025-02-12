@@ -209,6 +209,7 @@ nix.settings = {
     nil
     libsForQt5.kdenlive
     blanket
+    flameshot
     
 
     ###############################################
