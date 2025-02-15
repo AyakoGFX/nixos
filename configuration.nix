@@ -244,7 +244,6 @@ nix.settings = {
     unzip
     p7zip
     findutils
-    peazip
     os-prober
     ntfs3g
     stow
@@ -268,6 +267,7 @@ nix.settings = {
     eog
     nitrogen
     normcap
+    copyq
 
     ###############################################
     #         AUDIO & VIDEO TOOLS                 #
@@ -294,12 +294,14 @@ nix.settings = {
     #      FILE MANAGEMENT & ARCHIVES             #
     ###############################################
  #   xarchiver
+    file-roller
     gparted
 
     ###############################################
     #          MEDIA & GRAPHICS                   #
     ###############################################
     yt-dlp
+    cmus
     #gimp
     # inkscape-with-extensions
 

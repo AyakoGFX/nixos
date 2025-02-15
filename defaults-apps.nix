@@ -6,12 +6,12 @@
 }:
 {
   xdg.mime.defaultApplications = {
-    "application/zip" = "peazip-extract-desktop.desktop";
-    "application/x-7z-compressed" = "peazip-extract-desktop.desktop";
-    "application/vnd.rar" = "peazip-extract-desktop.desktop";
-    "application/x-tar" = "peazip-extract-desktop.desktop";
-    "application/gzip" = "peazip-extract-desktop.desktop";
-    "application/x-bzip2" = "peazip-extract-desktop.desktop";
+    "application/zip" = "org.gnome.FileRoller.desktop";
+    "application/x-7z-compressed" = "org.gnome.FileRoller.desktop";
+    "application/vnd.rar" = "org.gnome.FileRoller.desktop";
+    "application/x-tar" = "org.gnome.FileRoller.desktop";
+    "application/gzip" = "org.gnome.FileRoller.desktop";
+    "application/x-bzip2" = "org.gnome.FileRoller.desktop";
     # "application/pdf" = "google-chrome-stable.desktop";
     "application/pdf" = "firefox.desktop";
     "x-scheme-handler/terminal" = "alacritty.desktop";
