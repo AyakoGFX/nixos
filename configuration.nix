@@ -257,7 +257,6 @@ nix.settings = {
     #    DESKTOP ENVIRONMENT & WINDOW MANAGER     #
     ###############################################
     alacritty
-    warp-terminal
     dmenu
     rofi
     sxhkd
@@ -319,7 +318,7 @@ nix.settings = {
     #        SECURITY & PASSWORDS                 #
     ###############################################
     bitwarden-desktop
-    libsForQt5.kwalletmanager
+    # libsForQt5.kwalletmanager
 
     ###############################################
     #         DEVELOPMENT TOOLS                   #
