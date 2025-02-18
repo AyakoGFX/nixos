@@ -24,6 +24,7 @@
     ./DE-WM.nix
     ./defaults-apps.nix
     ./py.nix
+    ./ZonosAi.nix
     # ./ai.nix
     # ./pci.nix
   ];
@@ -154,6 +155,7 @@ nix.settings = {
         "networkmanager"
         "wheel"
         "adbusers"
+        "docker"
       ];
       packages = with pkgs; [ ];
     };
@@ -164,6 +166,7 @@ nix.settings = {
   # PROGRAM CONFIGURATIONS
   #
   programs = {
+  nix-ld.enable = true;
   fish.enable = true;
   nm-applet.enable = true;
   #noisetorch.enable = true;
@@ -267,7 +270,7 @@ nix.settings = {
     nitrogen
     normcap
     copyq
-
+    
     ###############################################
     #         AUDIO & VIDEO TOOLS                 #
     ###############################################
@@ -286,6 +289,7 @@ nix.settings = {
     discord
     telegram-desktop
     google-chrome
+    freetube
   #  thunderbird
   #  protontricks
 
@@ -301,6 +305,7 @@ nix.settings = {
     ###############################################
     yt-dlp
     cmus
+    mpv
     #gimp
     # inkscape-with-extensions
 
@@ -324,6 +329,9 @@ nix.settings = {
     #         DEVELOPMENT TOOLS                   #
     ###############################################
     github-desktop
+    docker
+    # docker-client
+    # emacsPackages.docker
 
     ###############################################
     #           RGB CONTROL                       #
@@ -342,6 +350,9 @@ nix.settings = {
     papirus-icon-theme
     arc-icon-theme
   ];
+# docker
+  virtualisation.docker.enable = true;
+
 
   # Power-Management
   services.auto-cpufreq.enable = true;
@@ -355,6 +366,13 @@ nix.settings = {
       turbo = "auto";
     };
   };
+  # Disable Double Click Prevention
+  # https://www.reddit.com/r/NixOS/comments/1irqtje/comment/mdc5js3/?context=3
+  environment.etc."libinput/local-overrides.quirks".text = ''
+  [Never Debounce]
+  MatchUdevType=mouse
+  ModelBouncingKeys=1
+'';
 
 # syncthing
   # services.syncthing.systemService = true;
