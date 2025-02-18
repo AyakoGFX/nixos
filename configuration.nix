@@ -53,6 +53,7 @@
     networkmanager.enable = true;
   };
 
+  # Enabling flakes https://youtu.be/JCeYq72Sko0?si=jdGzJkFafMditbjy
 nix.settings = {
   experimental-features = ["nix-command" "flakes"];
 };
