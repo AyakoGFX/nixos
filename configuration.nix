@@ -5,7 +5,7 @@
 # https://github.com/sytriz/dotfiles.git
 # https://github.com/TechsupportOnHold
 # https://youtu.be/CwfKlX3rA6E?si=CGSmYdMGPsdEmqA9
-# TODO xdg.mime.defaultApplications
+
 # sudo nixos-rebuild switch -I nixos-config=~/nixos/configuration.nix
 # sudo nixos-rebuild switch -I nixos-config=/home/ayako/nixos/configuration.nix
 # sudo nixos-rebuild --install-lbootloader boot
@@ -288,9 +288,9 @@ nix.settings = {
     ###############################################
     qbittorrent
     discord
-    telegram-desktop
-    google-chrome
-    freetube
+    # telegram-desktop
+    # google-chrome
+    # freetube
   #  thunderbird
   #  protontricks
 

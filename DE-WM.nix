@@ -8,6 +8,7 @@ let
   enableAwesomeWM = true;
   enableKDE = false;
   enableGNOME = false;
+  enableIceWM = true;
 in
 {
   config = lib.mkMerge [
@@ -17,6 +18,11 @@ in
       services.xserver.displayManager.lightdm.enable = true;
       services.xserver.windowManager.awesome.enable = true;
     })
+
+    (lib.mkIf enableIceWM {
+      services.xserver.windowManager.icewm.enable = true;
+    })
+
 
     # Block 2: KDE
     (lib.mkIf enableKDE {
