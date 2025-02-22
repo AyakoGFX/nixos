@@ -16,8 +16,15 @@ in
 
     # Block 1: AwesomeWM
     (lib.mkIf enableAwesomeWM {
-      services.xserver.displayManager.lightdm.enable = true;
-      services.xserver.windowManager.awesome.enable = true;
+      services.xserver = {
+        enable = true;
+        displayManager.lightdm.enable = true;
+        windowManager.awesome.enable = true;
+        xkb = {
+          layout = "us";
+          variant = "";
+        };
+      };
     })
 
     (lib.mkIf enableIceWM {
