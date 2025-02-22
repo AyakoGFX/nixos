@@ -16,17 +16,16 @@
   lib,
   ...
 }:
-
+# TODO Rename Module Files
 {
   imports = [
     ./hardware-configuration.nix
-    ./vm.nix
-    ./DE-WM.nix
-    ./defaults-apps.nix
-    ./py.nix
-    ./ZonosAi.nix
-    # ./ai.nix
-    # ./pci.nix
+    ./modules/vm.nix
+    ./modules/DE-WM.nix
+    ./modules/defaults-apps.nix
+    ./modules/py.nix
+    # ./module/ai.nix
+    # ./module/pci.nix
   ];
 
   #
@@ -374,6 +373,15 @@ nix.settings = {
   MatchUdevType=mouse
   ModelBouncingKeys=1
 '';
+
+  services.xserver.displayManager.sessionCommands = ''
+    xset -dpms  # Disable Energy Star, as we are going to suspend anyway and it may hide "success" on that
+    xset s noblank # `noblank` may be useful for debugging 
+    xset s 3600 # 1h in seconds
+    ${pkgs.lightlocker}/bin/light-locker --idle-hint &
+  '';
+
+
 
 # syncthing
   # services.syncthing.systemService = true;
