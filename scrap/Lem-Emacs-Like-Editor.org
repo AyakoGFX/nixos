@@ -1,0 +1,3 @@
+
+nix run github:lem-project/lem                    ~terminal~
+nix run github:lem-project/lem#lem-sdl2           ~gui~

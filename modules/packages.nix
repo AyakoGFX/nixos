@@ -59,7 +59,6 @@
     unrar
     rar
     unzip
-    p7zip
     findutils
     os-prober
     ntfs3g
