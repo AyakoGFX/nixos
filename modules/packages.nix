@@ -15,8 +15,8 @@
     vim
     neovim
     code-cursor
-    obsidian
     helix
+    micro
     tree
     ((pkgs.emacsPackagesFor pkgs.emacs30).emacsWithPackages (epkgs: [ epkgs.vterm ]))
     emacsPackages.jinx
@@ -29,7 +29,6 @@
     blanket
     flameshot
     
-
     ###############################################
     #        DEVELOPMENT & BUILD TOOLS            #
     ###############################################
