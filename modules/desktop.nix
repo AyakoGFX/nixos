@@ -8,7 +8,7 @@ let
   enableAwesomeWM = true;
   enableKDE = false;
   enableGNOME = false;
-  enableIceWM = true;
+  enableIceWM = false;
   enableXmonad = false;
 in
 {
