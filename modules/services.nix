@@ -7,7 +7,7 @@
     openssh.enable = true;
     tumbler.enable = true;
     flatpak.enable = true;
-    pulseaudio.enable = false;
+    # pulseaudio.enable = false;
     hardware.openrgb.enable = true;
     gnome.gnome-keyring.enable = true;
     libinput.touchpad.naturalScrolling = true;
