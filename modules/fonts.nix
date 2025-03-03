@@ -10,13 +10,14 @@
       source-han-sans
       source-han-sans-japanese
       source-han-serif-japanese
-      (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+      nerd-fonts.jetbrains-mono
+      # (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     ];
     
     fontconfig = {
       enable = true;
       defaultFonts = {
-        monospace = [ "JetBrainsMono LG M Regular Nerd Font Complete Mono" ];
+        monospace = [ "JetBrains Mono LG M Regular Nerd Font Complete Mono" ];
         serif = [
           "Noto Serif"
           "Source Han Serif"
