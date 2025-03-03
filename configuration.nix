@@ -31,6 +31,8 @@
     experimental-features = ["nix-command" "flakes"];
   };
 
+  # programs.home-manager.enable = true;
+
   # System State Version
   system.stateVersion = "24.11";
 }
