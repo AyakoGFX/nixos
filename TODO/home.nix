@@ -5,12 +5,12 @@
   home.homeDirectory = "/home/ayako";
 
   imports = [
-    ./home/theme.nix
+    # ./home/theme.nix
   ];
 
   # Ensure home-manager is installed
   home.packages = with pkgs; [
-    # home-manager
+     home-manager
   ];
 
   # Enable Home Manager

@@ -1,10 +1,10 @@
 { pkgs, lib, config, ... }:
 let
-  enableAwesomeWM = false;
+  enableAwesomeWM = true;
   enableKDE = false;
   enableGNOME = false;
   enableIceWM = false;
-  enablehyprland = true;
+  enablehyprland = false;
 in
 {
   imports = lib.concatLists [
