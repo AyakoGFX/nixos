@@ -3,7 +3,17 @@
 {
   # TODO please change the username & home directory to your own
   home.username = "ayako";
-  home.homeDirectory = "/home/ayako/";
+  home.homeDirectory = "/home/ayako";
+
+  imports = [
+    ./home/theme.nix
+  ];
+
+
+  # Packages that should be installed to the user profile.
+  home.packages = with pkgs; [
+
+  ];
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
@@ -25,11 +35,6 @@
 #    "Xcursor.size" = 16;
 #    "Xft.dpi" = 172;
 #  };
-
-  # Packages that should be installed to the user profile.
-  home.packages = with pkgs; [
-    
-  ];
 
   # basic configuration of git, please change to your own
 #  programs.git = {
@@ -94,3 +99,5 @@
   # Let home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
+# https://gitlab.com/Clsmith1/nixos/-/blob/main/home.nix?ref_type=heads  
+# https://github.com/vimjoyer/nixconf

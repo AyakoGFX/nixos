@@ -16,7 +16,7 @@
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
-      # TODO please change the hostname to your own
+      # TODO please change the hostname to your own mine is nixos
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
@@ -39,3 +39,6 @@
     };
   };
 }
+
+
+# https://gitlab.com/Clsmith1/nixos/-/blob/main/home.nix?ref_type=heads  
