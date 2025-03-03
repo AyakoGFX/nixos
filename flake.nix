@@ -15,13 +15,13 @@
     in
     {
       nixosConfigurations = {
-        GhostNix = lib.nixosSystem {
+        nixos = lib.nixosSystem { # nixos heair in left = hostname
           inherit system;
           modules = [ ./configuration.nix ];
         };
       };
       homeConfigurations = {
-        chris = home-manager.lib.homeManagerConfiguration {
+        ayako = home-manager.lib.homeManagerConfiguration { # ayako = username
           inherit pkgs;
           modules = [ ./home.nix ];
         };
