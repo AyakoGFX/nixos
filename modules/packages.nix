@@ -14,20 +14,26 @@
     ###############################################
     vim
     neovim
-    code-cursor
+    #code-cursor
     helix
     micro
     tree
     ((pkgs.emacsPackagesFor pkgs.emacs30).emacsWithPackages (epkgs: [ epkgs.vterm ]))
     emacsPackages.jinx
+    #*latex*
+    texliveFull
+    zathura
+    # ghostscript # doc view mode enacs
+
     # aspell
     hunspell
     hunspellDicts.en-us-large
     nixfmt-rfc-style
     nil
     libsForQt5.kdenlive
+    audacity
     blanket
-    flameshot
+
     
     ###############################################
     #        DEVELOPMENT & BUILD TOOLS            #
@@ -64,7 +70,6 @@
     ntfs3g
     stow
     acpi
-    brightnessctl
     appimage-run
     ripgrep
     pciutils
@@ -72,23 +77,16 @@
     ###############################################
     #    DESKTOP ENVIRONMENT & WINDOW MANAGER     #
     ###############################################
-    alacritty
-    dmenu
-    rofi
-    sxhkd
-    picom
-    polkit_gnome
+
+    cava
     gnome-font-viewer
-    eog
-    nitrogen
-    normcap
-    copyq
+
     
     ###############################################
     #         AUDIO & VIDEO TOOLS                 #
     ###############################################
     vlc
-    #    davinci-resolve
+    # davinci-resolve
     ffmpeg
    # handbrake
     pulseaudioFull
@@ -142,7 +140,7 @@
     #         DEVELOPMENT TOOLS                   #
     ###############################################
     github-desktop
-    docker
+    # docker
     # docker-client
     # emacsPackages.docker
 
@@ -154,10 +152,6 @@
     ###############################################
     #        THEMING & APPEARANCE                 #
     ###############################################
-    lxappearance
-    libsForQt5.qt5ct
-    kdePackages.qtstyleplugin-kvantum
-    libsForQt5.qtstyleplugin-kvantum
     arc-theme
     arc-kde-theme
     papirus-icon-theme

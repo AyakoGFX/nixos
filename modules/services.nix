@@ -17,3 +17,6 @@
     };
   };
 }
+
+  # use full in the future
+  # -- services.libinput.touchpad.disableWhileTyping
