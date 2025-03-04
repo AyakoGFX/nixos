@@ -9,6 +9,7 @@
     waybar
     hyprpolkitagent # Polkit
     networkmanagerapplet
+    wlogout
     
     kitty
     nautilus
