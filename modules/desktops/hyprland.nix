@@ -1,24 +1,22 @@
 { config, pkgs, lib, ... }:
-# TODO
-# super + w
-	# brightnessctl set 5%+ 
-# super + s
-	# brightnessctl set 5%-
+
 
 {
   programs.hyprland.enable = true; # enable Hyprland
-  # Optional, hint Electron apps to use Wayland:
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
   services.displayManager.sddm.enable = true;
   environment.systemPackages = with pkgs; [
+    # Hypr Ecosystem
+    waybar
+    hyprpolkitagent # Polkit
+    networkmanagerapplet
+    
     kitty
+    nautilus
     alacritty
     brightnessctl
     rofi
-    sxhkd
     normcap
     grim # Normcap dependency
-    polkit_gnome
     eog
     copyq
 
@@ -26,10 +24,22 @@
     libsForQt5.qt5ct
     kdePackages.qtstyleplugin-kvantum
     libsForQt5.qtstyleplugin-kvantum
-    arc-theme
+    arc-theme                       #cd $(nix build nixpkgs#arc-theme --print-out-paths --no-link)
+    papirus-icon-theme              #cd $(nix build nixpkgs#papirus-icon-theme --print-out-paths --no-link)
     arc-kde-theme
-    papirus-icon-theme
     arc-icon-theme
+    adwaita-icon-theme
   ];
-  
+
+ # Optional, hint Electron apps to use Wayland:
+environment = {
+  sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+  };
+  variables = {
+    QT_QPA_PLATFORM = "wayland";
+  };
+};
+
 }
+# sudo find /nix/store -type d -iname "adwaita-dark"

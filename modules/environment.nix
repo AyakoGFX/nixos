@@ -21,7 +21,7 @@
       EDITOR = "emacsclient -c";
       VISUAL = "emacsclient -c";
       QT_QPA_PLATFORMTHEME = "qt5ct";
-      QT_QPA_PLATFORM = "xcb";
+      # QT_QPA_PLATFORM = "xcb";
     };
   };
 }

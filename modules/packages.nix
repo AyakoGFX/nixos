@@ -129,6 +129,7 @@
     ugrep
     neofetch
     fastfetch
+    killall
 
     ###############################################
     #        SECURITY & PASSWORDS                 #
