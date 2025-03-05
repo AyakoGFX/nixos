@@ -18,8 +18,9 @@
     helix
     micro
     tree
-    ((pkgs.emacsPackagesFor pkgs.emacs30).emacsWithPackages (epkgs: [ epkgs.vterm ]))
-    emacsPackages.jinx
+    # ((pkgs.emacsPackagesFor pkgs.emacs30).emacsWithPackages (epkgs: [ epkgs.vterm ]))
+    emacs30
+    # emacsPackages.jinx
     #*latex*
     texliveFull
     zathura

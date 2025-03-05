@@ -3,7 +3,9 @@
 
 {
   programs.hyprland.enable = true; # enable Hyprland
-  services.displayManager.sddm.enable = true;
+  # services.displayManager.sddm.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.displayManager.gdm.wayland = true;
   environment.systemPackages = with pkgs; [
     # Hypr Ecosystem
     waybar
@@ -13,6 +15,8 @@
     
     kitty
     nautilus
+    btop
+    flameshot
     alacritty
     brightnessctl
     rofi
@@ -36,6 +40,7 @@
 environment = {
   sessionVariables = {
     NIXOS_OZONE_WL = "1";
+    GTK_THEME = "Adwaita-dark"; # Default GTK theme
   };
   variables = {
     QT_QPA_PLATFORM = "wayland";
