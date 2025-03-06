@@ -1,0 +1,29 @@
+{ config, pkgs, lib, ... }:
+
+let
+  myEmacs = (pkgs.emacsPackagesFor pkgs.emacs30).emacsWithPackages (epkgs: with epkgs; [
+    # vterm
+    treesit-grammars.with-all-grammars
+  ]);
+in {
+  environment.systemPackages = with pkgs; [
+    myEmacs
+    texliveFull
+    zathura
+    # ghostscript # doc view mode Emacs
+
+    # nixfmt-rfc-style
+    # nil
+    clang-tools
+
+    # <spell checking>
+    hunspell
+    hunspellDicts.en-us-large
+    tree-sitter
+    # emacsPackages.jinx
+    # <end>
+  ];
+}
+
+# Emacs with vterm
+# ((pkgs.emacsPackagesFor pkgs.emacs30).emacsWithPackages (epkgs: [ epkgs.vterm ]))

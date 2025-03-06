@@ -12,11 +12,14 @@
     hyprpolkitagent # Polkit
     networkmanagerapplet
     wlogout
-    
+    waypaper # wallpaper manager needs a backend ( swww, swaybg, feh, wallutils, hyprpaper, mpvpaper)
+    swww
+
     kitty
     nautilus
     btop
-    flameshot
+    # flameshot
+    (flameshot.override { enableWlrSupport = true; })
     alacritty
     brightnessctl
     rofi
@@ -46,6 +49,8 @@ environment = {
     QT_QPA_PLATFORM = "wayland";
   };
 };
+
+
 
 }
 # sudo find /nix/store -type d -iname "adwaita-dark"

@@ -21,6 +21,7 @@
     ./modules/touchpad.nix
     ./modules/users.nix
     ./modules/vm.nix
+    ./modules/emacs.nix
     # ./modules/ollama.ni
     # ./modules/pci.nix
     # ./modules/python.nixx

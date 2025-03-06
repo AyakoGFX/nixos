@@ -18,19 +18,6 @@
     helix
     micro
     tree
-    # ((pkgs.emacsPackagesFor pkgs.emacs30).emacsWithPackages (epkgs: [ epkgs.vterm ]))
-    emacs30
-    # emacsPackages.jinx
-    #*latex*
-    texliveFull
-    zathura
-    # ghostscript # doc view mode enacs
-
-    # aspell
-    hunspell
-    hunspellDicts.en-us-large
-    nixfmt-rfc-style
-    nil
     libsForQt5.kdenlive
     audacity
     blanket
