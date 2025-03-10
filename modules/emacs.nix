@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 let
-  myEmacs = (pkgs.emacsPackagesFor pkgs.emacs30).emacsWithPackages (epkgs: with epkgs; [
+  myEmacs = (pkgs.emacsPackagesFor pkgs.emacs-pgtk).emacsWithPackages (epkgs: with epkgs; [
     # vterm
     treesit-grammars.with-all-grammars
   ]);
@@ -10,6 +10,7 @@ in {
     myEmacs
     texliveFull
     zathura
+    espeak
     # ghostscript # doc view mode Emacs
 
     # nixfmt-rfc-style

@@ -12,13 +12,17 @@
     hyprpolkitagent # Polkit
     networkmanagerapplet
     wlogout
+    hyprlock
+    hypridle
     waypaper # wallpaper manager needs a backend ( swww, swaybg, feh, wallutils, hyprpaper, mpvpaper)
     swww
+    swaybg
+    pywal16
+    imagemagick
 
     kitty
     nautilus
     btop
-    # flameshot
     (flameshot.override { enableWlrSupport = true; })
     alacritty
     brightnessctl
@@ -36,8 +40,7 @@
     papirus-icon-theme              #cd $(nix build nixpkgs#papirus-icon-theme --print-out-paths --no-link)
     arc-kde-theme
     arc-icon-theme
-    adwaita-icon-theme
-  ];
+    adwaita-icon-theme  ];
 
  # Optional, hint Electron apps to use Wayland:
 environment = {

@@ -22,9 +22,9 @@
     ./modules/users.nix
     ./modules/vm.nix
     ./modules/emacs.nix
+    ./modules/python.nix
     # ./modules/ollama.ni
     # ./modules/pci.nix
-    # ./modules/python.nixx
   ];
 
   # Enabling flakes https://youtu.be/JCeYq72Sko0?si=jdGzJkFafMditbjy
