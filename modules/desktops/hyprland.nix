@@ -21,10 +21,10 @@
     imagemagick
 
     kitty
+    alacritty
     nautilus
     btop
     (flameshot.override { enableWlrSupport = true; })
-    alacritty
     brightnessctl
     rofi
     normcap
@@ -36,10 +36,8 @@
     libsForQt5.qt5ct
     kdePackages.qtstyleplugin-kvantum
     libsForQt5.qtstyleplugin-kvantum
-    arc-theme                       #cd $(nix build nixpkgs#arc-theme --print-out-paths --no-link)
     papirus-icon-theme              #cd $(nix build nixpkgs#papirus-icon-theme --print-out-paths --no-link)
-    arc-kde-theme
-    arc-icon-theme
+    gnome-themes-extra
     adwaita-icon-theme  ];
 
  # Optional, hint Electron apps to use Wayland:
