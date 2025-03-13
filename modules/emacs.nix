@@ -17,6 +17,11 @@ in {
     # nil
     clang-tools
 
+    # Go Lang Configuration
+    go
+    gopls
+    typescript-language-server
+
     # <spell checking>
     hunspell
     hunspellDicts.en-us-large

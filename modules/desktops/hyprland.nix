@@ -9,13 +9,13 @@
   environment.systemPackages = with pkgs; [
     # Hypr Ecosystem
     waybar
+    ags
     hyprpolkitagent # Polkit
     networkmanagerapplet
     wlogout
     hyprlock
     hypridle
     waypaper # wallpaper manager needs a backend ( swww, swaybg, feh, wallutils, hyprpaper, mpvpaper)
-    swww
     swaybg
     pywal16
     imagemagick

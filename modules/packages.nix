@@ -60,6 +60,7 @@
     acpi
     appimage-run
     ripgrep
+    fd
     pciutils
 
     ###############################################

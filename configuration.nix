@@ -13,7 +13,7 @@
     ./modules/localization.nix
     ./modules/networking.nix
     ./modules/packages.nix
-    ./modules/power-management.nix
+    # ./modules/power-management.nix # off this when Enable gnome 
     ./modules/programs.nix
     ./modules/security.nix
     ./modules/services.nix
