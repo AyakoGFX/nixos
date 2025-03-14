@@ -1,3 +1,19 @@
+# Set Clock to 24 to 12h format
+gsettings set org.gnome.desktop.interface clock-format '12h'
+
+# swap caps to esc 
+gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
+
+# Key Repeat Rate (repeat_delay and repeat_rate)
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 16  # 1000ms / 60Hz = 16ms
+gsettings set org.gnome.desktop.peripherals.keyboard delay 250
+
+# Open terminal
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name "'Open Alacritty'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command "'alacritty'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'<Super>Return'"
+
+# close apps 
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
 # Super + Right Mouse Click for resizing windows

@@ -7,4 +7,12 @@
     blur-my-shell
     launch-new-instance
   ];
+  environment = {
+    sessionVariables = {
+      NIXOS_OZONE_WL = "1";
+    };
+    variables = {
+      QT_QPA_PLATFORM = "wayland";
+    };
+  };
 }
