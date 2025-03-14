@@ -11,6 +11,7 @@
   environment.systemPackages = with pkgs; [
 
     alacritty
+    
     ###############################################
     #           TEXT EDITORS                      #
     ###############################################
@@ -89,7 +90,7 @@
     ###############################################
     qbittorrent
     discord
-    # telegram-desktop
+    telegram-desktop
     # google-chrome
     # freetube
   #  thunderbird
