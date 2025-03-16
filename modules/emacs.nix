@@ -26,6 +26,7 @@ in {
     hunspell
     hunspellDicts.en-us-large
     tree-sitter
+    harper # not working
     # emacsPackages.jinx
     # <end>
   ];

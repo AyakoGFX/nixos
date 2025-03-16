@@ -1,10 +1,10 @@
 { pkgs, lib, config, ... }:
 let
   enableAwesomeWM = false;
-  enableGNOME = true; # when enable this off power-management.nix in configuration.nix
+  enableGNOME = false; # when enable this off power-management.nix in configuration.nix
   enableIceWM = false;
   enableKDE = false;
-  enablehyprland = false;
+  enablehyprland = true;
 in
 {
   imports = lib.concatLists [
