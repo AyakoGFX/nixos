@@ -4,9 +4,9 @@ pkgs.mkShell {
   name = "python-env";
 
   buildInputs = [
-    pkgs.python310          # Python 3.10 (adjust version as needed)
-    pkgs.python310Packages.pip
-    pkgs.python310Packages.virtualenv
+    pkgs.python311          # Python 3.10 (adjust version as needed)
+    pkgs.python311Packages.pip
+    pkgs.python311Packages.virtualenv
     pkgs.python311Packages.manim
   ];
 

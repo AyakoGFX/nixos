@@ -1,13 +1,12 @@
 { config, pkgs, lib, ... }:
 
-
 {
   imports = [
     ./hardware-configuration.nix
     ./modules/boot.nix
     ./modules/defaults-apps.nix
     ./modules/desktop.nix
-    ./modules/environment.nix
+    ./modules/xdg-environment.nix
     ./modules/fonts.nix
     ./modules/hardware.nix
     ./modules/localization.nix

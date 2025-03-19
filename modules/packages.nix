@@ -17,7 +17,8 @@
     ###############################################
     vim
     neovim
-    #code-cursor
+    # code-cursor
+    vscode
     helix
     micro
     tree
@@ -64,7 +65,9 @@
     appimage-run
     ripgrep
     fd
+    fzf
     pciutils
+    
 
     ###############################################
     #    DESKTOP ENVIRONMENT & WINDOW MANAGER     #
@@ -108,6 +111,7 @@
     ###############################################
     yt-dlp
     cmus
+    ardour # daw
     mpv
     #gimp
     # inkscape-with-extensions

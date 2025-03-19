@@ -22,6 +22,10 @@ in {
     gopls
     typescript-language-server
 
+    # Python Lang Configuration
+    python312Packages.python-lsp-server
+    python312Packages.black
+
     # <spell checking>
     hunspell
     hunspellDicts.en-us-large
@@ -29,6 +33,8 @@ in {
     harper # not working
     # emacsPackages.jinx
     # <end>
+    exiftool # for hacker-man.el
+
   ];
 }
 
