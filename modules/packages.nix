@@ -94,6 +94,7 @@
     qbittorrent
     discord
     telegram-desktop
+    tmux
     # google-chrome
     # freetube
   #  thunderbird
@@ -113,6 +114,7 @@
     cmus
     ardour # daw
     mpv
+    internetarchive
     #gimp
     # inkscape-with-extensions
 
