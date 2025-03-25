@@ -95,6 +95,7 @@
     discord
     telegram-desktop
     tmux
+    showmethekey
     # google-chrome
     # freetube
   #  thunderbird
