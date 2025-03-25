@@ -96,10 +96,11 @@
     telegram-desktop
     tmux
     showmethekey
+    xdragon
     # google-chrome
     # freetube
-  #  thunderbird
-  #  protontricks
+    # thunderbird
+    # protontricks
 
     ###############################################
     #      FILE MANAGEMENT & ARCHIVES             #
