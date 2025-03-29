@@ -22,7 +22,7 @@
     helix
     micro
     tree
-    libsForQt5.kdenlive
+    # libsForQt5.kdenlive
     audacity
     blanket
 

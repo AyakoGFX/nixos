@@ -11,6 +11,7 @@
     # python310Packages.pip
     # python310Packages.virtualenv
     pipx
+    pip3
     python313
     python313Packages.pip
     virtualenv
