@@ -8,9 +8,11 @@ let
 in {
   environment.systemPackages = with pkgs; [
     myEmacs
+    uemacs # bin name = em
     texliveFull
     zathura
     espeak
+    # emacs-lsp-booster
     # ghostscript # doc view mode Emacs
 
     # nixfmt-rfc-style
@@ -35,6 +37,17 @@ in {
     # <end>
     exiftool # for hacker-man.el
 
+
+    #lsp-bridge
+    # python312Packages.epc
+    # python312Packages.orjson
+    # python312Packages.sexpdata
+    # python312Packages.six
+    # python312Packages.setuptools
+    # python312Packages.paramiko
+    # python312Packages.rapidfuzz
+    # python312Packages.watchdog
+    # python312Packages.packaging
   ];
 }
 

@@ -11,7 +11,8 @@
     # python310Packages.pip
     # python310Packages.virtualenv
     pipx
-    pip3
+    # pip3
+    # python312Packages.manim
     python313
     python313Packages.pip
     virtualenv
