@@ -6,16 +6,17 @@
 }:
 {
   xdg.mime.defaultApplications = {
-    "application/zip" = "org.gnome.FileRoller.desktop";
-    "application/x-7z-compressed" = "org.gnome.FileRoller.desktop";
-    "application/vnd.rar" = "org.gnome.FileRoller.desktop";
-    "application/x-tar" = "org.gnome.FileRoller.desktop";
     "application/gzip" = "org.gnome.FileRoller.desktop";
-    "application/x-bzip2" = "org.gnome.FileRoller.desktop";
-    # "application/pdf" = "google-chrome-stable.desktop";
     "application/pdf" = "firefox.desktop";
+    "application/vnd.rar" = "org.gnome.FileRoller.desktop";
+    "application/x-7z-compressed" = "org.gnome.FileRoller.desktop";
+    "application/x-bzip2" = "org.gnome.FileRoller.desktop";
+    "application/x-tar" = "org.gnome.FileRoller.desktop";
+    "application/zip" = "org.gnome.FileRoller.desktop";
+    "inode/directory" = "org.gnome.Nautilus.desktop";
     "x-scheme-handler/terminal" = "alacritty.desktop";
-    "inode/directory" = "thunar.desktop";
+    # "application/pdf" = "google-chrome-stable.desktop";
+    # "inode/directory" = "thunar.desktop";
 
     "image/png" = "org.gnome.eog.desktop";  # PNG files
     "image/jpeg" = "org.gnome.eog.desktop";  # JPG/JPEG files

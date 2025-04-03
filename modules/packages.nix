@@ -9,9 +9,11 @@
     ];
   };
   environment.systemPackages = with pkgs; [
+    ###############################################
+    #                 PDF                         #
+    ###############################################
+    poppler_utils
 
-    alacritty
-    
     ###############################################
     #           TEXT EDITORS                      #
     ###############################################
@@ -25,7 +27,7 @@
     # libsForQt5.kdenlive
     audacity
     blanket
-
+    alacritty
     
     ###############################################
     #        DEVELOPMENT & BUILD TOOLS            #

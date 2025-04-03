@@ -1,3 +1,4 @@
+# https://nixos.wiki/wiki/Python
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.mkShell {
@@ -36,3 +37,27 @@ pkgs.mkShell {
 
 
 
+
+
+
+
+
+
+
+
+
+
+#from manim import *
+#
+#class HelloScene(Scene):
+#    def construct(self):
+#        text = Text("Hello, Manim!")
+#        self.play(Write(text))
+#        self.wait(2)
+
+
+# manim -pql example.py HelloScene
+
+# -pql: Quick low-quality preview
+
+# -pqh: High-quality preview

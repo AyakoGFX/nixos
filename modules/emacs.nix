@@ -12,6 +12,7 @@ in {
     texliveFull
     zathura
     espeak
+    # delta #Syntax-highlighting diff files git
     # emacs-lsp-booster
     # ghostscript # doc view mode Emacs
 
