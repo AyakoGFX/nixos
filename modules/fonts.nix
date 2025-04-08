@@ -5,6 +5,8 @@
     packages = with pkgs; [
       noto-fonts
       iosevka
+      roboto-mono
+      fira-code-nerdfont
       noto-fonts-cjk-sans
       noto-fonts-emoji
       font-awesome

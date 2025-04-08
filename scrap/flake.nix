@@ -9,7 +9,7 @@
   }: let
     system = "x86_64-linux"; # change to whatever your system should be
   in {
-    nixosConfigurations."${host}" = nixpkgs.lib.nixosSystem {
+    nixosConfigurations."nixos" = nixpkgs.lib.nixosSystem {
       specialArgs = {
         inherit system;
         inherit inputs;

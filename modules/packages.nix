@@ -13,6 +13,8 @@
     #                 PDF                         #
     ###############################################
     poppler_utils
+    pdfarranger
+    # masterpdfeditor
 
     ###############################################
     #           TEXT EDITORS                      #
