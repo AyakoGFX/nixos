@@ -1,28 +1,19 @@
 { config, pkgs, lib, ... }:
-
-
 {
-  programs.hyprland.enable = true; # enable Hyprland
-  # services.displayManager.sddm.enable = true;
+  programs.niri.enable = true;
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.displayManager.gdm.wayland = true;
   environment.systemPackages = with pkgs; [
-    # Hypr Ecosystem
     waybar
-    # hyprlandPlugins.hyprscroller
-    hyprpolkitagent # Polkit
+    # hyprpolkitagent # Polkit
     networkmanagerapplet
     wlogout
-    hyprlock
-    hypridle
+    # hyprlock
+    # hypridle
     waypaper # wallpaper manager needs a backend ( swww, swaybg, feh, wallutils, hyprpaper, mpvpaper)
     swaybg
     pywal16
     imagemagick
-    
-    # Notification 
-    swaynotificationcenter
-    libnotify
 
     kitty
     alacritty
@@ -30,8 +21,10 @@
     btop
     (flameshot.override { enableWlrSupport = true; })
     brightnessctl
-    rofi
+    xwayland-satellite
+    fuzzel
     normcap
+    swaynotificationcenter
     grim # Normcap dependency
     eog
     copyq
