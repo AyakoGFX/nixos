@@ -12,6 +12,7 @@
     # hyprlandPlugins.hyprscroller
     hyprpolkitagent # Polkit
     networkmanagerapplet
+    swayosd
     wlogout
     hyprlock
     hypridle
@@ -49,6 +50,7 @@ environment = {
   sessionVariables = {
     NIXOS_OZONE_WL = "1";
     GTK_THEME = "Adwaita-dark"; # Default GTK theme
+    QT_SCREEN_SCALE_FACTORS = "1.25";
   };
   variables = {
     QT_QPA_PLATFORM = "wayland";
