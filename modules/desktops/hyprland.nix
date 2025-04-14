@@ -9,6 +9,10 @@
   environment.systemPackages = with pkgs; [
     # Hypr Ecosystem
     waybar
+    hyprshot
+    hyprpicker
+    wl-clipboard
+    wl-kbptr
     # hyprlandPlugins.hyprscroller
     hyprpolkitagent # Polkit
     networkmanagerapplet
@@ -24,6 +28,7 @@
     # Notification 
     swaynotificationcenter
     libnotify
+
 
     kitty
     alacritty

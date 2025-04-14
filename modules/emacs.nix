@@ -12,6 +12,9 @@ in {
     texliveFull
     zathura
     espeak
+    ledger
+    typst
+    tinymist
     # delta #Syntax-highlighting diff files git
     # emacs-lsp-booster
     # ghostscript # doc view mode Emacs
