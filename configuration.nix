@@ -31,6 +31,20 @@
     experimental-features = ["nix-command" "flakes"];
   };
 
+  system.activationScripts.createPersonalDirs.text = ''
+  mkdir -p /home/ayako/Desktop
+  mkdir -p /home/ayako/Download
+  mkdir -p /home/ayako/Templates
+  mkdir -p /home/ayako/Publicshare
+  mkdir -p /home/ayako/Documents
+  mkdir -p /home/ayako/Music
+  mkdir -p /home/ayako/Pictures/Screenshots
+  mkdir -p /home/ayako/Videos
+  mkdir -p /home/ayako/dev
+  mkdir -p /home/ayako/tmp
+  mkdir -p /home/ayako/nega
+'';
+
   # programs.home-manager.enable = true;
 
   # System State Version

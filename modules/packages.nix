@@ -60,6 +60,7 @@
     fish
     tldr
     xorg.xkill
+    # xdg-user-dirs
     termdown
     gdu
     zip
