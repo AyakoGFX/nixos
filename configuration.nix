@@ -1,8 +1,14 @@
 { config, pkgs, lib, ... }:
 
+# let
+#   let
+#   home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-24.11.tar.gz";
+# in
+
 {
   imports = [
     ./hardware-configuration.nix
+    # (import "${home-manager}/nixos")
     ./modules/boot.nix
     ./modules/defaults-apps.nix
     ./modules/desktop.nix
@@ -26,6 +32,11 @@
     # ./modules/pci.nix
   ];
 
+  # home-manager.useUserPackages = true;
+  # home-manager.useGlobalPkgs = true;
+  # home-manager.backupFileExtension = "backup";
+  # home-manager.users.ayako = import ./home.nix;
+
   # Enabling flakes https://youtu.be/JCeYq72Sko0?si=jdGzJkFafMditbjy
   nix.settings = {
     experimental-features = ["nix-command" "flakes"];
@@ -40,6 +51,8 @@
   mkdir -p /home/ayako/Music
   mkdir -p /home/ayako/Pictures/Screenshots
   mkdir -p /home/ayako/Videos
+  mkdir -p /home/ayako/.local/share/fonts
+  mkdir -p /home/ayako/.local/share/bin
   mkdir -p /home/ayako/dev
   mkdir -p /home/ayako/tmp
   mkdir -p /home/ayako/Books

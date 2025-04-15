@@ -1,13 +1,10 @@
-# nixos
- my nixos config 
-
-Useful links
-https://nixos-and-flakes.thiscute.world/
-https://gitlab.com/Clsmith1/nixos
-
-
-
-
+* NIXOS
+My Nixos Config 
++ Useful links
+ - https://nixos-and-flakes.thiscute.world/
+ - https://gitlab.com/Clsmith1/nixos
+ - https://github.com/tonybanters/home-manager-dotfiles.git
+ - https://youtu.be/bFmvnJVd5yQ?si=hszNEtKuvirgytUS
 
 home-manager -f "~/.dotfiles/home.nix" doesn't specify command to run, so it displays help.
 
