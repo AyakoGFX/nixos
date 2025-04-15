@@ -42,7 +42,9 @@
   mkdir -p /home/ayako/Videos
   mkdir -p /home/ayako/dev
   mkdir -p /home/ayako/tmp
-  mkdir -p /home/ayako/nega
+  mkdir -p /home/ayako/Books
+  mkdir -p /home/ayako/Books/{Essays,Theses,Reports,Papers}
+  chown -R ayako:users /home/ayako
 '';
 
   # programs.home-manager.enable = true;
