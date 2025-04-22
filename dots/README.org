@@ -1,0 +1,30 @@
+* Yep! Since you're in /home/ayako/nixos/dots, and your structure is like:
+#+begin_src 
+dots/
+└── hyprland/
+    └── .config/
+        └── hypr/
+        └── waybar/
+        └── ...
+#+end_src
+
+You can run:
+#+begin_src 
+stow -t ~ hyprland
+#+end_src
+
+* That tells stow:
+ + hyprland is the package (folder to link from),
+ + =-t ~= means link into your home directory (so .config/hypr goes to ~/.config/hypr).
+
+** 🔍 Dry run (to check first):
+=stow -nvt ~ hyprland=
+#+begin_src 
+    -n: no action (dry run)
+
+    -v: verbose
+
+    -t ~: target = home dir
+#+end_src
+
+

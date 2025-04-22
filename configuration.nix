@@ -27,8 +27,9 @@
     ./modules/users.nix
     ./modules/vm.nix
     ./modules/emacs.nix
+    # ./modules/hacker.nix TODO
     # ./modules/python.nix
-    # ./modules/ollama.ni
+    ./modules/ollama.nix
     # ./modules/pci.nix
   ];
 

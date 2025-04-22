@@ -5,6 +5,7 @@ My Nixos Config
  - https://gitlab.com/Clsmith1/nixos
  - https://github.com/tonybanters/home-manager-dotfiles.git
  - https://youtu.be/bFmvnJVd5yQ?si=hszNEtKuvirgytUS
+ - https://github.com/VelHRH/nixos-config.git
 
 home-manager -f "~/.dotfiles/home.nix" doesn't specify command to run, so it displays help.
 
