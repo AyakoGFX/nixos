@@ -130,7 +130,7 @@
     internetarchive
     #gimp
     # inkscape-with-extensions
-    inkscape-extensions.inkstitch
+    
 
     ###############################################
     #        SHELL ENHANCEMENTS                   #

@@ -12,7 +12,8 @@
   # Ensure home-manager is installed
   home.packages = with pkgs; [
     # home-manager
-    inkscape
+    # inkscape
+    inkscape-with-extensions
     pkgsUnstable.inkscape-extensions.inkstitch
   ];
 
