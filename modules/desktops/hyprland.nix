@@ -13,6 +13,9 @@
     hyprpicker
     wl-clipboard
     wl-kbptr
+    wl-screenrec
+    slurp
+    wluma #  Automatically adjust screen brightness based on the screen contents and amount of ambient light
     # hyprlandPlugins.hyprscroller
     hyprpolkitagent # Polkit
     networkmanagerapplet
@@ -62,7 +65,12 @@ environment = {
   };
 };
 
-
-
 }
 # sudo find /nix/store -type d -iname "adwaita-dark"
+
+# https://github.com/maximbaz/wluma
+# Usage
+
+# Simply launch wluma and continue adjusting your screen brightness as you usually do - the app will learn your preferences.
+
+# wluma will not do anything on the first launch! You have to adjust the brightness by hand a few times, in different environment and/or with different screen contents, that way wluma will learn your preferences and only then it will begin to automatically change your screen brightness for you.

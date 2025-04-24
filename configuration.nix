@@ -5,6 +5,9 @@
 #   home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-24.11.tar.gz";
 # in
 
+# /home/ayako/nixos/scrap/home.nix
+
+
 {
   imports = [
     ./hardware-configuration.nix
@@ -27,9 +30,10 @@
     ./modules/users.nix
     ./modules/vm.nix
     ./modules/emacs.nix
+    # ./modules/android.nix TODO
     # ./modules/hacker.nix TODO
     # ./modules/python.nix
-    ./modules/ollama.nix
+    # ./modules/ollama.nix
     # ./modules/pci.nix
   ];
 
@@ -52,6 +56,8 @@
   mkdir -p /home/ayako/Music
   mkdir -p /home/ayako/Pictures/Screenshots
   mkdir -p /home/ayako/Videos
+  mkdir -p /home/ayako/Videos/Record/
+  mkdir -p /home/ayako/Videos/Record/{Monitor,Region}
   mkdir -p /home/ayako/.local/share/fonts
   mkdir -p /home/ayako/.local/share/bin
   mkdir -p /home/ayako/dev

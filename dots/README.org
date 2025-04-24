@@ -13,6 +13,12 @@ You can run:
 stow -t ~ hyprland
 #+end_src
 
+** to stow the bin folder use 
+#+begin_src bash
+stow -t ~/.local bin # stow
+stow -Dt ~/.local bin # unstow
+#+end_src
+
 * That tells stow:
  + hyprland is the package (folder to link from),
  + =-t ~= means link into your home directory (so .config/hypr goes to ~/.config/hypr).

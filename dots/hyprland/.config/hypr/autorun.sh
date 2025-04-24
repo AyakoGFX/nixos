@@ -10,6 +10,7 @@ waybar &
 waypaper --restore &
 swaync &
 swayosd-server &
+wluma &
 run nm-applet &
 run copyq &
 emacs --daemon &
