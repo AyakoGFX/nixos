@@ -129,8 +129,7 @@
     mpv
     internetarchive
     #gimp
-    # inkscape-with-extensions
-    
+    inkscape
 
     ###############################################
     #        SHELL ENHANCEMENTS                   #

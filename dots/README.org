@@ -11,7 +11,11 @@ dots/
 You can run:
 #+begin_src 
 stow -t ~ hyprland
+
+rm ~/.config/hypr/ && stow -t ~ hyprland/
 #+end_src
+
+
 
 ** to stow the bin folder use 
 #+begin_src bash

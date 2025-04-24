@@ -1,0 +1,14 @@
+/** Basic config file **/
+
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus";
+  display-drun: "  ";
+  display-window: "﩯 ";
+  display-combi: "  ";
+}
+element-icon {
+    size: 2.5em;
+}
+
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
