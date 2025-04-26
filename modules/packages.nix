@@ -108,7 +108,7 @@
     tmux
     showmethekey
     xdragon
-    # google-chrome
+    google-chrome
     # freetube
     # thunderbird
     # protontricks
@@ -129,7 +129,7 @@
     mpv
     internetarchive
     #gimp
-    inkscape
+    # inkscape
 
     ###############################################
     #        SHELL ENHANCEMENTS                   #

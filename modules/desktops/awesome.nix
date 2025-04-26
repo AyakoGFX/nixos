@@ -36,7 +36,7 @@
         thunar-volman
       ];
     };
-  }
+  };
 }
 
 

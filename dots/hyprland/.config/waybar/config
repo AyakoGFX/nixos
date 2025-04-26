@@ -11,7 +11,7 @@
     // Choose the order of the modules
     "modules-left": [ "hyprland/workspaces", "hyprland/submap", "wlr/taskbar"],// "wlr/taskbar"
     "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/todo", "custom/separator", "pulseaudio", "custom/separator", "network","custom/separator", "cpu", "custom/separator", "memory", "custom/separator", "battery", "custom/separator","custom/uptime", "custom/separator",  "clock", "custom/separator", "tray","custom/swaync", "custom/wlogout"],
+    "modules-right": ["custom/todo", "custom/separator", "pulseaudio", "custom/separator", "network","custom/separator", "cpu", "custom/separator", "memory", "custom/separator", "battery", "custom/separator","custom/uptime", "custom/separator",  "clock", "custom/separator", "custom/clock2", "custom/separator", "tray","custom/swaync", "custom/wlogout"],
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": false,
@@ -36,14 +36,37 @@
         "icon-size": 21,
         "spacing": 10
     },
+    "custom/clock2": {
+        "exec": "date +'%H:%M'",
+        "interval": 60,
+        "format": "{}",
+        "tooltip": false
+    },
+    // "clock": {
+    //     "format": "{:%I:%M %p}",
+    //     "format-alt": "{:%d-%m-%Y}",
+    //     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    //     // "tooltip": false
+    // },
 
     "clock": {
         "format": "{:%I:%M %p}",
         "format-alt": "{:%d-%m-%Y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        // "tooltip": false
+        "calendar": {
+            "mode": "month",
+            "format": {
+                "today": "<span  color='#FF0033'><b><u>{}</u></b></span>" // background=#3a86ff'
+            }
+        }
     },
 
+    "custom/clock2": {
+        "exec": "date +'%H:%M'",  // Updates every second (adjust interval if needed)
+        "interval": 60,
+        "format": "{}",
+        "tooltip": false
+    },
     "cpu": {
         "format": " {usage}%  ",
         "on-click": "alacritty -e btop"
@@ -132,7 +155,7 @@
     },
     "custom/swaync": {
         "format": "  ",
-        "on-click": "swaync-client -op",
+        "on-click": "swaync-client -op"
     },
 
     "custom/uptime": {

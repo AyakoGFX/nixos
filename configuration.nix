@@ -21,7 +21,7 @@
     ./modules/localization.nix
     ./modules/networking.nix
     ./modules/packages.nix
-    ./modules/power-management.nix # off this when Enable gnome and kde
+    # ./modules/power-management.nix # off this when Enable gnome and kde
     ./modules/programs.nix
     ./modules/security.nix
     ./modules/services.nix
@@ -30,6 +30,7 @@
     ./modules/users.nix
     ./modules/vm.nix
     ./modules/emacs.nix
+    ./modules/nixos-unstable.nix
     # ./modules/android.nix TODO
     # ./modules/hacker.nix TODO
     # ./modules/python.nix

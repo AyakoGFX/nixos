@@ -29,7 +29,7 @@ window#waybar {
     border-bottom: 3px solid;
 }
 
-#custom-todo, #clock, #battery, #cpu, #memory, #network, #pulseaudio, #tray, #mode {
+#custom-clock2 #custom-todo, #clock, #battery, #cpu, #memory, #network, #pulseaudio, #tray, #mode {
     padding: 0 3px;
     margin: 0 2px;
 }
@@ -41,6 +41,11 @@ window#waybar {
 #custom-todo {
     color: @color1;
     font-weight: bold;
+}
+
+#custom-clock2 {
+    font-weight: bold;
+    font-size: 15px;
 }
 
 #custom-swaync {
