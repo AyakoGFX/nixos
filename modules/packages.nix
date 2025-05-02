@@ -22,6 +22,14 @@
     lmms
 
     ###############################################
+    #                 linux iceberg               #
+    ###############################################
+    localsend
+    # losslesscut-bin
+    # metadata-cleaner
+    # stirling-pdf
+
+    ###############################################
     #           TEXT EDITORS                      #
     ###############################################
     vim
@@ -168,5 +176,6 @@
     arc-kde-theme
     papirus-icon-theme
     arc-icon-theme
+
   ];
 }

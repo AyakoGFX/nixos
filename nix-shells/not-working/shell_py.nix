@@ -16,7 +16,7 @@ pkgs.mkShell {
 
   # Force Fish shell compatibility
   # Exports the correct environment for Fish
-  shellHookFish = pkgs.writeShellScript "hook-fish" ''
-    echo "This is designed for Fish."
-  '';
+  # shellHookFish = pkgs.writeShellScript "hook-fish" ''
+    # echo "This is designed for Fish."
+  # '';
 }

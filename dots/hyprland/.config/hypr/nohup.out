@@ -1,0 +1,1895 @@
+[LOG] Registered timeout rule for 300s:
+      on-timeout: brightnessctl -s set 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 900s:
+      on-timeout: ~/.config/hypr/sh/hyprlock-launch.sh
+      on-resume: 
+[LOG] Registered timeout rule for 1800s:
+      on-timeout: systemctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_32
+[ERR] Couldn't connect to session dbus
+err: [org.freedesktop.DBus.Error.FileExists] Failed to request bus name (File exists)
+[2025-04-27T23:26:14Z WARN  wluma] Skipping 'eDP-1' as it might be disconnected: No such file or directory (os error 2)
+[2025-04-27T23:26:14Z WARN  wluma] Skipping 'keyboard-dell' as it might be disconnected: No such file or directory (os error 2)
+[2025-04-27T23:26:14Z INFO  wluma] Continue adjusting brightness and wluma will learn your preference over time.
+SwayOSD LibInput Backend isn't available, waiting...
+** Message: 04:56:14.548: configModel.vala:289: Loading Config: "/home/ayako/.config/swaync/config.json"
+** Message: 04:56:14.550: functions.vala:86: Loading CSS: "/run/current-system/sw/etc/xdg/swaync/style.css"
+** Message: 04:56:14.552: functions.vala:100: Loading CSS: "/home/ayako/.config/swaync/style.css"
+** Message: 04:56:14.557: factory.vala:44: Loading widget: buttons-grid
+** Message: 04:56:14.574: factory.vala:44: Loading widget: mpris
+** Message: 04:56:14.576: factory.vala:44: Loading widget: volume
+** Message: 04:56:14.576: factory.vala:44: Loading widget: dnd
+** Message: 04:56:14.576: factory.vala:44: Loading widget: title
+Could not acquire notification name. Please close any other notification daemon like mako or dunst
+Due to a limitation in GTK 3, Emacs built with PGTK will simply exit when a
+display connection is closed.  The problem is especially difficult to fix,
+such that Emacs on Wayland with multiple displays is unlikely ever to be able
+to survive disconnects.
+[2025-04-28 04:56:14.627] [info] Using configuration file /home/ayako/.config/waybar/config
+[2025-04-28 04:56:14.629] [info] Discovered appearance 'dark'
+[2025-04-28 04:56:14.629] [info] Using CSS file /home/ayako/.config/waybar/style.css
+
+(waybar:299421): Gtk-WARNING **: 04:56:14.629: Theme parsing error: style.css:5:20: Not using units is deprecated. Assuming 'px'.
+[2025-04-28 04:56:14.634] [info] Hyprland IPC starting
+[2025-04-28 04:56:14.635] [info] Loading persistent workspaces from Hyprland workspace rules
+swaybg: no process found
+2025-04-28 04:56:14 - [main.c:282] Found config * for output eDP-1 (Chimei Innolux Corporation 0x1521 )
+[[1;32mI[0m] [1;31mimage[0m: Using image [1;37mwallpaperflare.com_wallpaper.jpg[0m.
+[[1;32mI[0m] [1;31mtheme[0m: Set theme to [1;37m_home_ayako_Wallpapers_badman_wallpaperflare_com_wallpaper_jpg_9_dark_None_None_362481_1.1.0.json[0m.
+[[1;32mI[0m] [1;31mcolors[0m: Found cached colorscheme.
+swaybg: no process found
+[[1;32mI[0m] [1;31mwallpaper[0m: Set the new wallpaper.
+[[1;32mI[0m] [1;31msequences[0m: Set terminal colors.
+[[1;32mI[0m] [1;31mexport[0m: Exported all files.
+[[1;32mI[0m] [1;31mexport[0m: Exported all user files.
+Sent command to set wallpaper was set with swaybg
+Post command wal -i /home/ayako/Wallpapers/badman/wallpaperflare.com_wallpaper.jpg executed
+[[1;32mI[0m] [1;31mreload[0m: Reloaded environment.
+[[1;33mW[0m] [1;31mreload[0m: GTK2 reload support requires Python 2.
+[2025-04-28 04:56:14.968] [warning] Requested height: 24 is less than the minimum height: 29 required by the modules
+[2025-04-28 04:56:14.968] [info] Bar configured (width: 1900, height: 29) for output: eDP-1
+[2025-04-28 04:56:14.968] [error] Item '': No icon name or pixmap given.
+[2025-04-28 04:56:14.969] [error] Item '': No icon name or pixmap given.
+Loading /home/ayako/.emacs.d/elpa/naga-theme-20241216.1955/naga-base.el (source)...
+Loading /home/ayako/.emacs.d/elpa/naga-theme-20241216.1955/naga-base.el (source)...done
+[2025-04-28 04:56:15.127] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-04-28 04:56:15.128] [info] Loading persistent workspaces from Hyprland workspace rules
+Loading /home/ayako/.emacs.d/custom.el (source)...
+Loading /home/ayako/.emacs.d/custom.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/case-conversion.el (source)...
+Loading /home/ayako/.emacs.d/moduals/case-conversion.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/completion.el (source)...
+Loading /home/ayako/.emacs.d/moduals/completion.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/consult.el (source)...
+Loading /home/ayako/.emacs.d/moduals/consult.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/dired.el (source)...
+Loading /home/ayako/.emacs.d/moduals/dired.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/display-buffer.el (source)...
+Loading /home/ayako/.emacs.d/moduals/display-buffer.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/elfeed.el (source)...
+Followed link to /home/ayako/emacs-minimal/.emacs.d/bookmarks
+Loading /home/ayako/.emacs.d/moduals/elfeed.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/erc.el (source)...
+Loading /home/ayako/.emacs.d/moduals/erc.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/eww.el (source)...
+Loading /home/ayako/.emacs.d/moduals/eww.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/functionality.el (source)...
+Loading /home/ayako/.emacs.d/moduals/functionality.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/key.el (source)...
+Loading /home/ayako/.emacs.d/moduals/key.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/latex.el (source)...
+[yas] Prepared just-in-time loading of snippets successfully.
+Loading /home/ayako/.emacs.d/moduals/latex.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot-hooks.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot-hooks.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/html.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/html.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/lua.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/lua.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/nix.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/nix.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/go.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/go.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/harper.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/harper.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/treesit.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/treesit.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/typst.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/typst.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/my-find.el (source)...
+Loading /home/ayako/.emacs.d/moduals/my-find.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/my-func.el (source)...
+Loading /home/ayako/.emacs.d/moduals/my-func.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/note.el (source)...
+Loading /home/ayako/.emacs.d/moduals/note.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/org.el (source)...
+Loading /home/ayako/.emacs.d/moduals/org.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/os.el (source)...
+Loading /home/ayako/.emacs.d/moduals/os.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/shell.el (source)...
+Loading /home/ayako/.emacs.d/moduals/shell.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/spell.el (source)...
+Loading /home/ayako/.emacs.d/moduals/spell.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/themes.el (source)...
+Loading /home/ayako/.emacs.d/moduals/themes.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/workspace.el (source)...
+Loading /home/ayako/.emacs.d/moduals/workspace.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/pdf.el (source)...
+ATTENTION: org-noter-nov needs the package ‘nov’
+ATTENTION: org-noter-djvu needs the package ‘djvu’
+Loading /home/ayako/.emacs.d/moduals/pdf.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/git.el (source)...
+Loading /home/ayako/.emacs.d/moduals/git.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/project.el (source)...
+Loading /home/ayako/.emacs.d/moduals/project.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/ledger.el (source)...
+Loading /home/ayako/.emacs.d/moduals/ledger.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/sound.el (source)...
+Loading /home/ayako/.emacs.d/moduals/sound.el (source)...done
+Loading /home/ayako/.emacs.d/recentf...
+Loading /home/ayako/.emacs.d/recentf...done
+Cleaning up the recentf list...
+Cleaning up the recentf list...done (0 removed)
+Starting new Ispell process hunspell with en_US dictionary... \ 
+Starting new Ispell process hunspell with en_US dictionary...done
+Starting Emacs daemon.
+Unable to start the daemon.
+Another instance of Emacs is running the server, either as daemon or interactively.
+You can use emacsclient to connect to that Emacs process.
+Wrote /home/ayako/.emacs.d/recentf
+Wrote /home/ayako/.emacs.d/places
+Error: server did not start correctly
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+[LOG] Registered timeout rule for 300s:
+      on-timeout: brightnessctl -s set 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 900s:
+      on-timeout: ~/.config/hypr/sh/hyprlock-launch.sh
+      on-resume: 
+[LOG] Registered timeout rule for 1800s:
+      on-timeout: systemctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[2025-04-27T23:26:38Z WARN  wluma] Skipping 'eDP-1' as it might be disconnected: No such file or directory (os error 2)
+[2025-04-27T23:26:38Z WARN  wluma] Skipping 'keyboard-dell' as it might be disconnected: No such file or directory (os error 2)
+[2025-04-27T23:26:38Z INFO  wluma] Continue adjusting brightness and wluma will learn your preference over time.
+[LOG] Using dbus path /org/freedesktop/login1/session/_32
+[ERR] Couldn't connect to session dbus
+err: [org.freedesktop.DBus.Error.FileExists] Failed to request bus name (File exists)
+** Message: 04:56:38.141: configModel.vala:289: Loading Config: "/home/ayako/.config/swaync/config.json"
+** Message: 04:56:38.141: functions.vala:86: Loading CSS: "/run/current-system/sw/etc/xdg/swaync/style.css"
+** Message: 04:56:38.142: functions.vala:100: Loading CSS: "/home/ayako/.config/swaync/style.css"
+SwayOSD LibInput Backend isn't available, waiting...
+** Message: 04:56:38.148: factory.vala:44: Loading widget: buttons-grid
+Due to a limitation in GTK 3, Emacs built with PGTK will simply exit when a
+display connection is closed.  The problem is especially difficult to fix,
+such that Emacs on Wayland with multiple displays is unlikely ever to be able
+to survive disconnects.
+** Message: 04:56:38.162: factory.vala:44: Loading widget: mpris
+** Message: 04:56:38.164: factory.vala:44: Loading widget: volume
+** Message: 04:56:38.164: factory.vala:44: Loading widget: dnd
+** Message: 04:56:38.164: factory.vala:44: Loading widget: title
+Could not acquire notification name. Please close any other notification daemon like mako or dunst
+[2025-04-28 04:56:38.173] [info] Using configuration file /home/ayako/.config/waybar/config
+[2025-04-28 04:56:38.175] [info] Discovered appearance 'dark'
+[2025-04-28 04:56:38.175] [info] Using CSS file /home/ayako/.config/waybar/style.css
+
+(waybar:299758): Gtk-WARNING **: 04:56:38.176: Theme parsing error: style.css:5:20: Not using units is deprecated. Assuming 'px'.
+[2025-04-28 04:56:38.181] [info] Hyprland IPC starting
+[2025-04-28 04:56:38.182] [info] Loading persistent workspaces from Hyprland workspace rules
+swaybg: no process found
+2025-04-28 04:56:38 - [main.c:282] Found config * for output eDP-1 (Chimei Innolux Corporation 0x1521 )
+[[1;32mI[0m] [1;31mimage[0m: Using image [1;37mwallpaperflare.com_wallpaper.jpg[0m.
+[[1;32mI[0m] [1;31mtheme[0m: Set theme to [1;37m_home_ayako_Wallpapers_badman_wallpaperflare_com_wallpaper_jpg_9_dark_None_None_362481_1.1.0.json[0m.
+[[1;32mI[0m] [1;31mcolors[0m: Found cached colorscheme.
+swaybg: no process found
+[[1;32mI[0m] [1;31mwallpaper[0m: Set the new wallpaper.
+[[1;32mI[0m] [1;31msequences[0m: Set terminal colors.
+[[1;32mI[0m] [1;31mexport[0m: Exported all files.
+[[1;32mI[0m] [1;31mexport[0m: Exported all user files.
+Sent command to set wallpaper was set with swaybg
+Post command wal -i /home/ayako/Wallpapers/badman/wallpaperflare.com_wallpaper.jpg executed
+[[1;32mI[0m] [1;31mreload[0m: Reloaded environment.
+[[1;33mW[0m] [1;31mreload[0m: GTK2 reload support requires Python 2.
+[2025-04-28 04:56:38.493] [warning] Requested height: 24 is less than the minimum height: 29 required by the modules
+[2025-04-28 04:56:38.493] [info] Bar configured (width: 1900, height: 29) for output: eDP-1
+Loading /home/ayako/.emacs.d/elpa/naga-theme-20241216.1955/naga-base.el (source)...
+Loading /home/ayako/.emacs.d/elpa/naga-theme-20241216.1955/naga-base.el (source)...done
+Loading /home/ayako/.emacs.d/custom.el (source)...
+Loading /home/ayako/.emacs.d/custom.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/case-conversion.el (source)...
+Loading /home/ayako/.emacs.d/moduals/case-conversion.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/completion.el (source)...
+Loading /home/ayako/.emacs.d/moduals/completion.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/consult.el (source)...
+Loading /home/ayako/.emacs.d/moduals/consult.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/dired.el (source)...
+Loading /home/ayako/.emacs.d/moduals/dired.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/display-buffer.el (source)...
+Loading /home/ayako/.emacs.d/moduals/display-buffer.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/elfeed.el (source)...
+[2025-04-28 04:56:39.166] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-04-28 04:56:39.168] [info] Loading persistent workspaces from Hyprland workspace rules
+Followed link to /home/ayako/emacs-minimal/.emacs.d/bookmarks
+Loading /home/ayako/.emacs.d/moduals/elfeed.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/erc.el (source)...
+Loading /home/ayako/.emacs.d/moduals/erc.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/eww.el (source)...
+Loading /home/ayako/.emacs.d/moduals/eww.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/functionality.el (source)...
+Loading /home/ayako/.emacs.d/moduals/functionality.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/key.el (source)...
+Loading /home/ayako/.emacs.d/moduals/key.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/latex.el (source)...
+[yas] Prepared just-in-time loading of snippets successfully.
+Loading /home/ayako/.emacs.d/moduals/latex.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot-hooks.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot-hooks.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/html.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/html.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/lua.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/lua.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/nix.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/nix.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/go.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/go.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/harper.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/harper.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/treesit.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/treesit.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/typst.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/typst.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/my-find.el (source)...
+Loading /home/ayako/.emacs.d/moduals/my-find.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/my-func.el (source)...
+Loading /home/ayako/.emacs.d/moduals/my-func.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/note.el (source)...
+Loading /home/ayako/.emacs.d/moduals/note.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/org.el (source)...
+Loading /home/ayako/.emacs.d/moduals/org.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/os.el (source)...
+Loading /home/ayako/.emacs.d/moduals/os.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/shell.el (source)...
+Loading /home/ayako/.emacs.d/moduals/shell.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/spell.el (source)...
+Loading /home/ayako/.emacs.d/moduals/spell.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/themes.el (source)...
+Loading /home/ayako/.emacs.d/moduals/themes.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/workspace.el (source)...
+Loading /home/ayako/.emacs.d/moduals/workspace.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/pdf.el (source)...
+ATTENTION: org-noter-nov needs the package ‘nov’
+ATTENTION: org-noter-djvu needs the package ‘djvu’
+Loading /home/ayako/.emacs.d/moduals/pdf.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/git.el (source)...
+Loading /home/ayako/.emacs.d/moduals/git.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/project.el (source)...
+Loading /home/ayako/.emacs.d/moduals/project.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/ledger.el (source)...
+Loading /home/ayako/.emacs.d/moduals/ledger.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/sound.el (source)...
+Loading /home/ayako/.emacs.d/moduals/sound.el (source)...done
+Loading /home/ayako/.emacs.d/recentf...
+Loading /home/ayako/.emacs.d/recentf...done
+Cleaning up the recentf list...
+Cleaning up the recentf list...done (0 removed)
+Starting new Ispell process hunspell with en_US dictionary... \ 
+Starting new Ispell process hunspell with en_US dictionary...done
+Starting Emacs daemon.
+Unable to start the daemon.
+Another instance of Emacs is running the server, either as daemon or interactively.
+You can use emacsclient to connect to that Emacs process.
+Wrote /home/ayako/.emacs.d/recentf
+Wrote /home/ayako/.emacs.d/places
+Error: server did not start correctly
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+[LOG] Idled: rule 20145600
+[LOG] Idled: rule a93ab80
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 300274
+[LOG] Process Created with pid 300275
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Resumed: rule a93ab80
+[LOG] Resumed: rule 20145600
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 300307
+[LOG] Process Created with pid 300308
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+[LOG] Registered timeout rule for 300s:
+      on-timeout: brightnessctl -s set 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 900s:
+      on-timeout: ~/.config/hypr/sh/hyprlock-launch.sh
+      on-resume: 
+[LOG] Registered timeout rule for 1800s:
+      on-timeout: systemctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[2025-04-28T00:15:26Z WARN  wluma] Skipping 'eDP-1' as it might be disconnected: No such file or directory (os error 2)
+[2025-04-28T00:15:26Z WARN  wluma] Skipping 'keyboard-dell' as it might be disconnected: No such file or directory (os error 2)
+[2025-04-28T00:15:26Z INFO  wluma] Continue adjusting brightness and wluma will learn your preference over time.
+[LOG] Using dbus path /org/freedesktop/login1/session/_32
+[ERR] Couldn't connect to session dbus
+err: [org.freedesktop.DBus.Error.FileExists] Failed to request bus name (File exists)
+** Message: 05:45:26.982: configModel.vala:289: Loading Config: "/home/ayako/.config/swaync/config.json"
+** Message: 05:45:26.983: functions.vala:86: Loading CSS: "/run/current-system/sw/etc/xdg/swaync/style.css"
+** Message: 05:45:26.983: functions.vala:100: Loading CSS: "/home/ayako/.config/swaync/style.css"
+Due to a limitation in GTK 3, Emacs built with PGTK will simply exit when a
+display connection is closed.  The problem is especially difficult to fix,
+such that Emacs on Wayland with multiple displays is unlikely ever to be able
+to survive disconnects.
+** Message: 05:45:26.988: factory.vala:44: Loading widget: buttons-grid
+SwayOSD LibInput Backend isn't available, waiting...
+** Message: 05:45:27.001: factory.vala:44: Loading widget: mpris
+** Message: 05:45:27.001: factory.vala:44: Loading widget: volume
+** Message: 05:45:27.002: factory.vala:44: Loading widget: dnd
+** Message: 05:45:27.002: factory.vala:44: Loading widget: title
+[2025-04-28 05:45:27.003] [info] Using configuration file /home/ayako/.config/waybar/config
+Could not acquire notification name. Please close any other notification daemon like mako or dunst
+[2025-04-28 05:45:27.006] [info] Discovered appearance 'dark'
+[2025-04-28 05:45:27.006] [info] Using CSS file /home/ayako/.config/waybar/style.css
+
+(waybar:309087): Gtk-WARNING **: 05:45:27.006: Theme parsing error: style.css:5:20: Not using units is deprecated. Assuming 'px'.
+[2025-04-28 05:45:27.010] [info] Hyprland IPC starting
+[2025-04-28 05:45:27.010] [info] Loading persistent workspaces from Hyprland workspace rules
+swaybg: no process found
+2025-04-28 05:45:27 - [main.c:282] Found config * for output eDP-1 (Chimei Innolux Corporation 0x1521 )
+[[1;32mI[0m] [1;31mimage[0m: Using image [1;37mwallpaperflare.com_wallpaper.jpg[0m.
+[[1;32mI[0m] [1;31mtheme[0m: Set theme to [1;37m_home_ayako_Wallpapers_badman_wallpaperflare_com_wallpaper_jpg_9_dark_None_None_362481_1.1.0.json[0m.
+[[1;32mI[0m] [1;31mcolors[0m: Found cached colorscheme.
+swaybg: no process found
+[[1;32mI[0m] [1;31mwallpaper[0m: Set the new wallpaper.
+[[1;32mI[0m] [1;31msequences[0m: Set terminal colors.
+[[1;32mI[0m] [1;31mexport[0m: Exported all files.
+[[1;32mI[0m] [1;31mexport[0m: Exported all user files.
+[[1;32mI[0m] [1;31mreload[0m: Reloaded environment.
+[[1;33mW[0m] [1;31mreload[0m: GTK2 reload support requires Python 2.
+Sent command to set wallpaper was set with swaybg
+Post command wal -i /home/ayako/Wallpapers/badman/wallpaperflare.com_wallpaper.jpg executed
+[2025-04-28 05:45:27.310] [warning] Requested height: 24 is less than the minimum height: 29 required by the modules
+[2025-04-28 05:45:27.310] [info] Bar configured (width: 1900, height: 29) for output: eDP-1
+Loading /home/ayako/.emacs.d/elpa/naga-theme-20241216.1955/naga-base.el (source)...
+Loading /home/ayako/.emacs.d/elpa/naga-theme-20241216.1955/naga-base.el (source)...done
+Loading /home/ayako/.emacs.d/custom.el (source)...
+[2025-04-28 05:45:27.493] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-04-28 05:45:27.495] [info] Loading persistent workspaces from Hyprland workspace rules
+Loading /home/ayako/.emacs.d/custom.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/case-conversion.el (source)...
+Loading /home/ayako/.emacs.d/moduals/case-conversion.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/completion.el (source)...
+Loading /home/ayako/.emacs.d/moduals/completion.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/consult.el (source)...
+Loading /home/ayako/.emacs.d/moduals/consult.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/dired.el (source)...
+Loading /home/ayako/.emacs.d/moduals/dired.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/display-buffer.el (source)...
+Loading /home/ayako/.emacs.d/moduals/display-buffer.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/elfeed.el (source)...
+Followed link to /home/ayako/emacs-minimal/.emacs.d/bookmarks
+Loading /home/ayako/.emacs.d/moduals/elfeed.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/erc.el (source)...
+Loading /home/ayako/.emacs.d/moduals/erc.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/eww.el (source)...
+Loading /home/ayako/.emacs.d/moduals/eww.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/functionality.el (source)...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Loading /home/ayako/.emacs.d/moduals/functionality.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/key.el (source)...
+Loading /home/ayako/.emacs.d/moduals/key.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/latex.el (source)...
+[yas] Prepared just-in-time loading of snippets successfully.
+Loading /home/ayako/.emacs.d/moduals/latex.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot-hooks.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/eglot-hooks.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/html.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/html.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/lua.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/lua.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/nix.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/nix.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/go.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/go.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/harper.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/harper.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/treesit.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/treesit.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp/typst.el (source)...
+Loading /home/ayako/.emacs.d/moduals/lsp/typst.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/lsp.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/my-find.el (source)...
+Loading /home/ayako/.emacs.d/moduals/my-find.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/my-func.el (source)...
+Loading /home/ayako/.emacs.d/moduals/my-func.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/note.el (source)...
+Loading /home/ayako/.emacs.d/moduals/note.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/org.el (source)...
+Loading /home/ayako/.emacs.d/moduals/org.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/os.el (source)...
+Loading /home/ayako/.emacs.d/moduals/os.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/shell.el (source)...
+Loading /home/ayako/.emacs.d/moduals/shell.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/spell.el (source)...
+Loading /home/ayako/.emacs.d/moduals/spell.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/themes.el (source)...
+Loading /home/ayako/.emacs.d/moduals/themes.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/workspace.el (source)...
+Loading /home/ayako/.emacs.d/moduals/workspace.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/pdf.el (source)...
+ATTENTION: org-noter-nov needs the package ‘nov’
+ATTENTION: org-noter-djvu needs the package ‘djvu’
+Loading /home/ayako/.emacs.d/moduals/pdf.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/git.el (source)...
+Loading /home/ayako/.emacs.d/moduals/git.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/project.el (source)...
+Loading /home/ayako/.emacs.d/moduals/project.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/ledger.el (source)...
+Loading /home/ayako/.emacs.d/moduals/ledger.el (source)...done
+Loading /home/ayako/.emacs.d/moduals/sound.el (source)...
+Loading /home/ayako/.emacs.d/moduals/sound.el (source)...done
+Loading /home/ayako/.emacs.d/recentf...
+Loading /home/ayako/.emacs.d/recentf...done
+Cleaning up the recentf list...
+File ~/denote/20250206T174706--movie-tv-show__movie_tvshow.org removed from the recentf list
+Cleaning up the recentf list...done (1 removed)
+Starting new Ispell process hunspell with en_US dictionary... \ 
+Starting new Ispell process hunspell with en_US dictionary...done
+Starting Emacs daemon.
+Unable to start the daemon.
+Another instance of Emacs is running the server, either as daemon or interactively.
+You can use emacsclient to connect to that Emacs process.
+Wrote /home/ayako/.emacs.d/recentf
+Wrote /home/ayako/.emacs.d/places
+Error: server did not start correctly
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+[LOG] Idled: rule a93ab80
+[LOG] Running brightnessctl -s set 10
+[LOG] Idled: rule 20145600
+[LOG] Executing brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Idled: rule 1f0d3b80
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 312942
+[LOG] Process Created with pid 312943
+[LOG] Process Created with pid 312944
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Resumed: rule a93ab80
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Resumed: rule 20145600
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 312968
+[LOG] Process Created with pid 312969
+[LOG] Process Created with pid 312970
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+[LOG] Idled: rule a93ab80
+[LOG] Idled: rule 20145600
+[LOG] Running brightnessctl -s set 10
+[LOG] Idled: rule 1f0d3b80
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 313168
+[LOG] Process Created with pid 313169
+[LOG] Process Created with pid 313170
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Idled: rule a93abc8
+[LOG] Idled: rule 20145648
+[LOG] Running ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Running ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Idled: rule 1f0d3bc8
+[LOG] Executing ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Running ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Process Created with pid 313336
+[LOG] Process Created with pid 313335
+[LOG] Process Created with pid 313337
+[ERR] Config has errors:
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 18: config option <animations:enabled> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 19: config option <animations:bezier> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 20: config option <animations:animation> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 21: config option <animations:animation> does not exist.
+Proceeding ignoring faulty entries
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output 51 name eDP-1
+[LOG] output 51 description Chimei Innolux Corporation 0x1521  (eDP-1)
+[LOG] output 51 make Chimei Innolux Corporation model 0x1521
+[LOG] output 51 done
+[LOG] Running on Hyprland
+[LOG] Locking session
+[ERR] Pam module "/etc/pam.d/hyprlock" does not exist! Falling back to "/etc/pam.d/su"
+[LOG] Got fractional scale: 1
+[LOG] Got fractional scale: 1
+[LOG] configure with serial 62138
+[LOG] Configuring surface for logical [Vector2D: x: 1920, y: 1080] and pixel [Vector2D: x: 1920, y: 1080]
+[LOG] Got fraction[ERR] Config has errors:
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 18: config option <animations:enabled> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 19: config option <animations:bezier> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 20: config option <animations:animation> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 21: config option <animations:animation> does not exist.
+Proceeding ignoring faulty entries
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output 51 name eDP-1
+[LOG] output 51 description Chimei Innolux Corporation 0x1521  (eDP-1)
+[LOG] output 51 make Chimei Innolux Corporation model 0x1521
+[LOG] output 51 done
+[LOG] Running on Hyprland
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+[ERR] Config has errors:
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 18: config option <animations:enabled> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 19: config option <animations:bezier> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 20: config option <animations:animation> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 21: config option <animations:animation> does not exist.
+Proceeding ignoring faulty entries
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output 51 name eDP-1
+[LOG] output 51 description Chimei Innolux Corporation 0x1521  (eDP-1)
+[LOG] output 51 make Chimei Innolux Corporation model 0x1521
+[LOG] output 51 done
+[LOG] Running on Hyprland
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+[LOG] Idled: rule a93ac10
+[LOG] Idled: rule 20145690
+[LOG] Idled: rule 1f0d3c10
+[LOG] Running systemctl suspend
+[LOG] Running systemctl suspend
+[LOG] Running systemctl suspend
+[LOG] Executing systemctl suspend
+[LOG] Executing systemctl suspend
+[LOG] Executing systemctl suspend
+[LOG] Process Created with pid 317301
+[LOG] Process Created with pid 317302
+[LOG] Process Created with pid 317303
+[LOG] Got PrepareForSleep from dbus with sleep true
+[LOG] Got PrepareForSleep from dbus with sleep true
+[LOG] Got PrepareForSleep from dbus with sleep true
+[LOG] Running: pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Running: pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Running: pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Process Created with pid 317312
+[LOG] Process Created with pid 317314
+[LOG] Process Created with pid 317315
+Call to Suspend failed: Action suspend already in progress, refusing requested suspend operation.
+Call to Suspend failed: Action suspend already in progress, refusing requested suspend operation.
+313370
+313370
+313370
+[LOG] Resumed: rule a93ab80
+[LOG] Resumed: rule 20145600
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 317462
+[LOG] Process Created with pid 317461
+[LOG] Resumed: rule 20145648
+[LOG] Ignoring, onRestore is empty.
+[LOG] Resumed: rule 20145690
+[LOG] Resumed: rule a93abc8
+[LOG] Ignoring, onRestore is empty.
+[LOG] Ignoring, onRestore is empty.
+[LOG] Resumed: rule a93ac10
+[LOG] Ignoring, onRestore is empty.
+[LOG] Process Created with pid 317463
+[LOG] Resumed: rule 1f0d3bc8
+[LOG] Ignoring, onRestore is empty.
+[LOG] Resumed: rule 1f0d3c10
+[LOG] Ignoring, onRestore is empty.
+[LOG] Got PrepareForSleep from dbus with sleep false
+[LOG] Got PrepareForSleep from dbus with sleep false
+[LOG] Running: hyprctl dispatch dpms on
+[LOG] Running: hyprctl dispatch dpms on
+[LOG] Executing hyprctl dispatch dpms on
+[LOG] Executing hyprctl dispatch dpms on
+[LOG] Got PrepareForSleep from dbus with sleep false
+[LOG] Running: hyprctl dispatch dpms on
+[LOG] Executing hyprctl dispatch dpms on
+[LOG] Process Created with pid 317468
+[LOG] Process Created with pid 317470
+[LOG] Process Created with pid 317472
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Couldn't commit output {}
+Couldn't commit output {}
+Couldn't commit output {}
+[LOG] Idled: rule a93ab80
+[LOG] Idled: rule 20145600
+[LOG] Idled: rule 1f0d3b80
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 319553
+[LOG] Process Created with pid 319554
+[LOG] Process Created with pid 319555
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Idled: rule a93abc8
+[LOG] Idled: rule 20145648
+[LOG] Idled: rule 1f0d3bc8
+[LOG] Running ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Running ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Running ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Process Created with pid 322149
+[LOG] Process Created with pid 322151
+[LOG] Process Created with pid 322150
+[ERR] Config has errors:
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 18: config option <animations:enabled> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 19: config option <animations:bezier> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 20: config option <animations:animation> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 21: config option <animations:animation> does not exist.
+Proceeding ignoring faulty entries
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output 51 name eDP-1
+[LOG] output 51 description Chimei Innolux Corporation 0x1521  (eDP-1)
+[LOG] output 51 make Chimei Innolux Corporation model 0x1521
+[LOG] output 51 done
+[LOG] Running on Hyprland
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+[ERR] Config has errors:
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 18: config option <animations:enabled> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 19: config option <animations:bezier> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 20: config option <animations:animation> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 21: config option <animations:animation> does not exist.
+Proceeding ignoring faulty entries
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output 51 name eDP-1
+[LOG] output 51 description Chimei Innolux Corporation 0x1521  (eDP-1)
+[LOG] output 51 make Chimei Innolux Corporation model 0x1521
+[LOG] output 51 done
+[LOG] Running on Hyprland
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+[ERR] Config has errors:
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 18: config option <animations:enabled> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 19: config option <animations:bezier> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 20: config option <animations:animation> does not exist.
+Config error in file /home/ayako/nixos/dots/hyprland/.config/hypr/hyprlock.conf at line 21: config option <animations:animation> does not exist.
+Proceeding ignoring faulty entries
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]    > Bound to wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]    > Bound to wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]    > Bound to wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]    > Bound to wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]    > Bound to ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]    > Bound to zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_security_context_manager_v1 v1
+[LOG]   | got iface: hyprland_ctm_control_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]    > Bound to zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]    > Bound to wl_output v4
+[LOG] [core] dmabufFeedbackMainDevice
+[LOG] output 51 name eDP-1
+[LOG] output 51 description Chimei Innolux Corporation 0x1521  (eDP-1)
+[LOG] output 51 make Chimei Innolux Corporation model 0x1521
+[LOG] output 51 done
+[LOG] Running on Hyprland
+[LOG] Locking session
+[LOG] onLockFinished called. Seems we got yeeten. Is another lockscreen running?
+[LOG] Idled: rule a93ac10
+[LOG] Idled: rule 1f0d3c10
+[LOG] Running systemctl suspend
+[LOG] Idled: rule 20145690
+[LOG] Running systemctl suspend
+[LOG] Executing systemctl suspend
+[LOG] Running systemctl suspend
+[LOG] Executing systemctl suspend
+[LOG] Executing systemctl suspend
+[LOG] Process Created with pid 326114
+[LOG] Process Created with pid 326115
+[LOG] Process Created with pid 326116
+[LOG] Got PrepareForSleep from dbus with sleep true
+[LOG] Got PrepareForSleep from dbus with sleep true
+[LOG] Got PrepareForSleep from dbus with sleep true
+[LOG] Running: pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Running: pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Running: pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Executing pidof hyprlock || ~/.config/hypr/sh/hyprlock-launch.sh
+[LOG] Process Created with pid 326122
+[LOG] Process Created with pid 326123
+[LOG] Process Created with pid 326125
+Call to Suspend failed: Action suspend already in progress, refusing requested suspend operation.
+Call to Suspend failed: Action suspend already in progress, refusing requested suspend operation.
+313370
+313370
+313370
+[LOG] Got PrepareForSleep from dbus with sleep false
+[LOG] Got PrepareForSleep from dbus with sleep false
+[LOG] Got PrepareForSleep from dbus with sleep false
+[LOG] Running: hyprctl dispatch dpms on
+[LOG] Running: hyprctl dispatch dpms on
+[LOG] Running: hyprctl dispatch dpms on
+[LOG] Executing hyprctl dispatch dpms on
+[LOG] Executing hyprctl dispatch dpms on
+[LOG] Executing hyprctl dispatch dpms on
+[LOG] Process Created with pid 326278
+[LOG] Process Created with pid 326279
+[LOG] Process Created with pid 326280
+Couldn't commit output {}
+Couldn't commit output {}
+Couldn't commit output {}
+[LOG] Resumed: rule a93ab80
+[LOG] Resumed: rule 20145600
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 337764
+[LOG] Resumed: rule 20145648
+[LOG] Ignoring, onRestore is empty.
+[LOG] Resumed: rule 20145690
+[LOG] Ignoring, onRestore is empty.
+[LOG] Process Created with pid 337765
+[LOG] Resumed: rule a93abc8
+[LOG] Ignoring, onRestore is empty.
+[LOG] Resumed: rule a93ac10
+[LOG] Ignoring, onRestore is empty.
+[LOG] Process Created with pid 337766
+[LOG] Resumed: rule 1f0d3bc8
+[LOG] Ignoring, onRestore is empty.
+[LOG] Resumed: rule 1f0d3c10
+[LOG] Ignoring, onRestore is empty.
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+al scale: 1
+[LOG] onLockLocked called
+[LOG] Authenticating
+[LOG] PAM_PROMPT: Password: 
+[LOG] auth: authenticated for su
+[LOG] Unlocking session
+[LOG] Unlocked, exiting!
+[LOG] Reached the end, exiting
+[LOG] Idled: rule a93ab80
+[LOG] Running brightnessctl -s set 10
+[LOG] Idled: rule 20145600
+[LOG] Executing brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Idled: rule 1f0d3b80
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 340727
+[LOG] Process Created with pid 340728
+[LOG] Process Created with pid 340729
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Resumed: rule 20145600
+[LOG] Resumed: rule a93ab80
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 340737
+[LOG] Process Created with pid 340738
+[LOG] Process Created with pid 340739
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+[LOG] Idled: rule 20145600
+[LOG] Idled: rule a93ab80
+[LOG] Idled: rule 1f0d3b80
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 341232
+[LOG] Process Created with pid 341234
+[LOG] Process Created with pid 341233
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Resumed: rule a93ab80
+[LOG] Resumed: rule 20145600
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 341242
+[LOG] Process Created with pid 341243
+[LOG] Process Created with pid 341244
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+[LOG] Idled: rule a93ab80
+[LOG] Idled: rule 20145600
+[LOG] Idled: rule 1f0d3b80
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 342047
+[LOG] Process Created with pid 342048
+[LOG] Process Created with pid 342049
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Resumed: rule 20145600
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Resumed: rule a93ab80
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 342379
+[LOG] Process Created with pid 342381
+[LOG] Process Created with pid 342380
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 0 (0%)
+	Max brightness: 255
+
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+Trying BrightnessCtl Backend...
+[LOG] Idled: rule a93ab80
+[LOG] Idled: rule 20145600
+[LOG] Idled: rule 1f0d3b80
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 405688
+[LOG] Process Created with pid 405689
+[LOG] Process Created with pid 405690
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Resumed: rule a93ab80
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Resumed: rule 20145600
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 405704
+[LOG] Process Created with pid 405706
+[LOG] Process Created with pid 405705
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+[LOG] Idled: rule a93ab80
+[LOG] Idled: rule 20145600
+[LOG] Idled: rule 1f0d3b80
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 406727
+[LOG] Process Created with pid 406729
+[LOG] Process Created with pid 406730
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Resumed: rule 20145600
+[LOG] Resumed: rule a93ab80
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 406787
+[LOG] Process Created with pid 406788
+[LOG] Process Created with pid 406790
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+[LOG] Idled: rule 1f0d3b80
+[LOG] Idled: rule 20145600
+[LOG] Idled: rule a93ab80
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 407856
+[LOG] Process Created with pid 407857
+[LOG] Process Created with pid 407858
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Resumed: rule 20145600
+[LOG] Resumed: rule a93ab80
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 407867
+[LOG] Process Created with pid 407869
+[LOG] Process Created with pid 407868
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+[LOG] Idled: rule a93ab80
+[LOG] Idled: rule 20145600
+[LOG] Idled: rule 1f0d3b80
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 408232
+[LOG] Process Created with pid 408233
+[LOG] Process Created with pid 408231
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Resumed: rule 20145600
+[LOG] Resumed: rule a93ab80
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 408279
+[LOG] Process Created with pid 408280
+[LOG] Process Created with pid 408281
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+[LOG] Idled: rule 1f0d3b80
+[LOG] Idled: rule a93ab80
+[LOG] Idled: rule 20145600
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 408663
+[LOG] Process Created with pid 408664
+[LOG] Process Created with pid 408665
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl2':
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Resumed: rule 1f0d3b80
+[LOG] Resumed: rule 20145600
+[LOG] Resumed: rule a93ab80
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 408695
+[LOG] Process Created with pid 408696
+[LOG] Process Created with pid 408697
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Device 'amdgpu_bl2' of class 'backlight':
+	Current brightness: 48 (19%)
+	Max brightness: 255
+
+Trying BrightnessCtl Backend...
+[LOG] systemd idle inhibit active
+[LOG] systemd idle inhibit active
+[LOG] systemd idle inhibit active
+[LOG] Inhibit locks: 1
+[LOG] Inhibit locks: 1
+[LOG] Inhibit locks: 1
+[LOG] systemd idle inhibit inactive
+[LOG] systemd idle inhibit inactive
+[LOG] systemd idle inhibit inactive
+[LOG] Inhibit locks: 0
+[LOG] Inhibit locks: 0
+[LOG] Inhibit locks: 0

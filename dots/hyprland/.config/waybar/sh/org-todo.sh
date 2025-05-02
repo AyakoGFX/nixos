@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-FILE=~/.emacs.d/org-capture/TODO.org
+FILE=~/denote/org-capture/TODO.org
 # Ensure the file exists
 [ -f "$FILE" ] || { printf '{"text": "0 TODO", "tooltip": "No TODOs"}\n'; exit 0; }
 
