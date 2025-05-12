@@ -33,6 +33,7 @@
     ./modules/nixos-unstable.nix
     ./modules/ps2-games.nix
     # ./modules/android.nix TODO
+    ./modules/droidcam.nix
     # ./modules/hacker.nix TODO
     # ./modules/python.nix
     # ./modules/ollama.nix

@@ -16,6 +16,8 @@
     wl-screenrec
     slurp
     wluma #  Automatically adjust screen brightness based on the screen contents and amount of ambient light
+    kando # https://kando.menu/installation-on-linux/#-hyprland
+    xdg-user-dirs
     # hyprlandPlugins.hyprscroller
     hyprpolkitagent # Polkit
     networkmanagerapplet

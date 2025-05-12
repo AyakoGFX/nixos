@@ -8,6 +8,7 @@ function run {
 
 waybar &
 waypaper --restore &
+kando &
 swaync &
 swayosd-server &
 wluma &

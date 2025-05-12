@@ -1,0 +1,21 @@
+{
+  "menuTheme": "default",
+  "darkMenuTheme": "default",
+  "menuThemeColors": {},
+  "darkMenuThemeColors": {
+    "neon-lights": {
+      "glow-color": "rgba(130, 140, 255, 1)",
+      "connector-color": "rgba(184, 204, 255, 0.75)"
+    },
+    "default": {
+      "text-color": "rgba(242, 242, 242, 1)",
+      "background-color": "rgba(60, 60, 60, 1)",
+      "hover-color": "rgba(250, 177, 25, 1)",
+      "border-color": "rgba(250, 177, 25, 1)"
+    }
+  },
+  "enableDarkModeForMenuThemes": true,
+  "sidebarVisible": false,
+  "enableVersionCheck": true,
+  "zoomFactor": 1.1
+}
