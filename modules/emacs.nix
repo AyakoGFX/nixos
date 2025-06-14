@@ -2,7 +2,7 @@
 
 let
   myEmacs = (pkgs.emacsPackagesFor pkgs.emacs-pgtk).emacsWithPackages (epkgs: with epkgs; [
-    # vterm
+    vterm
     treesit-grammars.with-all-grammars
   ]);
 in {

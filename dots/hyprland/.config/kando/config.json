@@ -1,21 +1,17 @@
 {
   "menuTheme": "default",
   "darkMenuTheme": "default",
-  "menuThemeColors": {},
-  "darkMenuThemeColors": {
-    "neon-lights": {
-      "glow-color": "rgba(130, 140, 255, 1)",
-      "connector-color": "rgba(184, 204, 255, 0.75)"
-    },
+  "menuThemeColors": {
     "default": {
-      "text-color": "rgba(242, 242, 242, 1)",
+      "border-color": "rgba(255, 180, 19, 1)",
+      "hover-color": "rgba(255, 180, 19, 1)",
       "background-color": "rgba(60, 60, 60, 1)",
-      "hover-color": "rgba(250, 177, 25, 1)",
-      "border-color": "rgba(250, 177, 25, 1)"
+      "text-color": "rgba(255, 255, 255, 1)"
     }
   },
-  "enableDarkModeForMenuThemes": true,
-  "sidebarVisible": false,
+  "darkMenuThemeColors": {},
+  "enableDarkModeForMenuThemes": false,
+  "sidebarVisible": true,
   "enableVersionCheck": true,
-  "zoomFactor": 1.1
+  "zoomFactor": 1
 }

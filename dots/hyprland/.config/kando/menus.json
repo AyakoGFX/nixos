@@ -232,72 +232,15 @@
         "iconTheme": "material-symbols-rounded",
         "children": [
           {
-            "type": "submenu",
-            "data": {},
-            "name": "apps",
-            "icon": "apps",
+            "type": "hotkey",
+            "data": {
+              "hotkey": "MetaLeft+ArrowLeft",
+              "delayed": true
+            },
+            "name": "Left",
+            "icon": "line_start_arrow_notch",
             "iconTheme": "material-symbols-rounded",
-            "children": [
-              {
-                "type": "command",
-                "data": {
-                  "command": "firefox",
-                  "delayed": false
-                },
-                "name": "FireFox",
-                "icon": "firefoxbrowser",
-                "iconTheme": "simple-icons"
-              },
-              {
-                "type": "command",
-                "data": {
-                  "command": "telegram-desktop",
-                  "delayed": false
-                },
-                "name": "Telegram",
-                "icon": "telegram",
-                "iconTheme": "simple-icons"
-              },
-              {
-                "type": "uri",
-                "data": {
-                  "uri": "https://www.photopea.com/"
-                },
-                "name": "PhotoPea",
-                "icon": "adobephotoshop",
-                "iconTheme": "simple-icons"
-              },
-              {
-                "type": "command",
-                "data": {
-                  "command": "org.kde.kdenlive",
-                  "delayed": false
-                },
-                "name": "Kdenlive",
-                "icon": "kdenlive",
-                "iconTheme": "simple-icons"
-              },
-              {
-                "type": "command",
-                "data": {
-                  "command": "nautilus",
-                  "delayed": false
-                },
-                "name": "File Browser",
-                "icon": "folder_shared",
-                "iconTheme": "material-symbols-rounded"
-              },
-              {
-                "type": "command",
-                "data": {
-                  "command": "alacritty",
-                  "delayed": false
-                },
-                "name": "Alacritty",
-                "icon": "alacritty",
-                "iconTheme": "simple-icons"
-              }
-            ]
+            "angle": 270
           },
           {
             "type": "submenu",
@@ -335,6 +278,15 @@
               {
                 "type": "uri",
                 "data": {
+                  "uri": "https://www.reddit.com/"
+                },
+                "name": "Reddit",
+                "icon": "reddit",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "uri",
+                "data": {
                   "uri": "https://chatgpt.com/"
                 },
                 "name": "ChatGPT",
@@ -351,6 +303,105 @@
                 "iconTheme": "simple-icons"
               }
             ]
+          },
+          {
+            "type": "submenu",
+            "data": {},
+            "name": "apps",
+            "icon": "apps",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "command",
+                "data": {
+                  "command": "emacsclient -c -a emacs",
+                  "delayed": false
+                },
+                "name": "Emacs",
+                "icon": "gnuemacs",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "firefox",
+                  "delayed": false
+                },
+                "name": "FireFox",
+                "icon": "firefoxbrowser",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "telegram-desktop",
+                  "delayed": false
+                },
+                "name": "Telegram",
+                "icon": "telegram",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "uri",
+                "data": {
+                  "uri": "https://www.photopea.com/"
+                },
+                "name": "PhotoPea",
+                "icon": "adobephotoshop",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "openrgb",
+                  "delayed": false
+                },
+                "name": "RGB",
+                "icon": "highlight_keyboard_focus",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "org.kde.kdenlive",
+                  "delayed": false
+                },
+                "name": "Kdenlive",
+                "icon": "kdenlive",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "nautilus",
+                  "delayed": false
+                },
+                "name": "File Browser",
+                "icon": "folder_shared",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "alacritty",
+                  "delayed": false
+                },
+                "name": "Alacritty",
+                "icon": "alacritty",
+                "iconTheme": "simple-icons"
+              }
+            ]
+          },
+          {
+            "type": "hotkey",
+            "data": {
+              "hotkey": "MetaRight+ArrowRight",
+              "delayed": true
+            },
+            "name": "Right",
+            "icon": "line_end_arrow_notch",
+            "iconTheme": "material-symbols-rounded",
+            "angle": 90
           },
           {
             "type": "submenu",

@@ -7,7 +7,6 @@
 
 # /home/ayako/nixos/scrap/home.nix
 
-
 {
   imports = [
     ./hardware-configuration.nix
@@ -30,10 +29,10 @@
     ./modules/users.nix
     ./modules/vm.nix
     ./modules/emacs.nix
-    ./modules/nixos-unstable.nix
-    ./modules/ps2-games.nix
+    # ./modules/nixos-unstable.nix
+    # ./modules/ps2-games.nix
     # ./modules/android.nix TODO
-    ./modules/droidcam.nix
+    # ./modules/droidcam.nix
     # ./modules/hacker.nix TODO
     # ./modules/python.nix
     # ./modules/ollama.nix
