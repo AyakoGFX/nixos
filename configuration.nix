@@ -72,5 +72,5 @@
   # programs.home-manager.enable = true;
 
   # System State Version
-  system.stateVersion = "24.11";
+  system.stateVersion = "25.05";
 }
