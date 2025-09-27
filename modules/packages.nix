@@ -9,6 +9,9 @@
     ];
   };
   environment.systemPackages = with pkgs; [
+    # Weather app
+    mousam
+    meteo
     ###############################################
     #                 PDF                         #
     ###############################################
@@ -117,6 +120,10 @@
     showmethekey
     xdragon
     google-chrome
+    # varia # Simple download manager based on aria2 and libadwaita
+    aria2
+    # uget
+    # gopeed
     # freetube
     # thunderbird
     # protontricks

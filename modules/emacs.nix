@@ -12,6 +12,7 @@ in {
     texliveFull
     zathura
     espeak
+    piper-tts
     ledger
     typst
     tinymist
