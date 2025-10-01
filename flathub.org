@@ -1,0 +1,10 @@
+
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+* Flatseal
+ - flatpak install flathub com.github.tchx84.Flatseal
+* Rnote - Sketch and take handwritten notes
+ - flatpak install flathub com.github.flxzt.rnote
+* bottles - Run Windows software
+ - flatpak install flathub com.usebottles.bottles
+

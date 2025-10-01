@@ -20,6 +20,7 @@
     ./modules/localization.nix
     ./modules/networking.nix
     ./modules/packages.nix
+    ./modules/opentabletdriver.nix
     # ./modules/power-management.nix # off this when Enable gnome and kde
     ./modules/programs.nix
     ./modules/security.nix
@@ -35,7 +36,7 @@
     # ./modules/android.nix TODO
     # ./modules/droidcam.nix
     # ./modules/hacker.nix TODO
-    # ./modules/python.nix
+    ./modules/python.nix
     # ./modules/ollama.nix
     # ./modules/pci.nix
   ];

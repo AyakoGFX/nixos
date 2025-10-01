@@ -8,7 +8,7 @@
       "archiver-3.5.1"
     ];
   };
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [    
     # Weather app
     mousam
     meteo
@@ -16,7 +16,7 @@
     #                 PDF                         #
     ###############################################
     poppler_utils
-    pdfarranger
+    # pdfarranger
     # masterpdfeditor
 
     ###############################################
@@ -28,8 +28,8 @@
     #                 linux iceberg               #
     ###############################################
     localsend
-    # losslesscut-bin
-    # metadata-cleaner
+    losslesscut-bin
+    metadata-cleaner
     # stirling-pdf
 
     ###############################################
@@ -40,7 +40,7 @@
     # code-cursor
     vscode
     helix
-    micro
+    # micro
     tree
     # libsForQt5.kdenlive
     audacity
@@ -105,7 +105,7 @@
     vlc
     # davinci-resolve
     ffmpeg
-   # handbrake
+    handbrake
     pulseaudioFull
     pavucontrol
     obs-studio
@@ -122,7 +122,7 @@
     google-chrome
     # varia # Simple download manager based on aria2 and libadwaita
     aria2
-    # uget
+    uget
     # gopeed
     # freetube
     # thunderbird

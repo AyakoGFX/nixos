@@ -28,6 +28,7 @@
     libsForQt5.qtstyleplugin-kvantum
   ];
 
+  environment.variables.SDL_VIDEODRIVER = "x11";
   programs = {
     thunar = {
       enable = true;
