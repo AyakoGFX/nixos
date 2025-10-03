@@ -43,7 +43,7 @@
     # micro
     tree
     # libsForQt5.kdenlive
-    audacity
+    # audacity
     blanket
     alacritty
     
