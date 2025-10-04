@@ -225,6 +225,8 @@
   nixpkgs.config.permittedInsecurePackages = [
     "qbittorrent-4.6.4"
     "python3.11-youtube-dl-2021.12.17"
+    "libsoup-2.74.3"
+
   ];
 
   # dwm 
