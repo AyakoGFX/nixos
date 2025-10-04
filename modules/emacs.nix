@@ -44,10 +44,10 @@ in {
 
     # <Clojure>
     jdk21             # Java 21 (LTS, latest and stable)
-    clojure           # Clojure CLI tools
+    # clojure           # Clojure CLI tools
     clj-kondo         # Linter
-    clojure-lsp       # LSP server for Emacs
-    leiningen         # Optional: if you want to use Lein projects
+    # clojure-lsp       # LSP server for Emacs
+    # leiningen         # Optional: if you want to use Lein projects
 
 
     #lsp-bridge
