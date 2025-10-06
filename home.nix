@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{inputs, config, pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should manage
@@ -7,6 +7,15 @@
 
   # This value determines the Home Manager release that your configuration is compatible with
   home.stateVersion = "25.05"; # Check your NixOS version
+
+  wayland.windowManager.hyprland = {
+    enable = true;
+    # ...
+    plugins = [
+      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
+      # ...
+    ];
+  };
 
   # Packages to install for this user
   home.packages = with pkgs; [

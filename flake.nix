@@ -2,15 +2,21 @@
   description = "NixOS configuration with Home Manager";
 
   inputs = {
-    # nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.05";
+    hyprland.url = "github:hyprwm/Hyprland";
+    # nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     # nur.url = "github:nix-community/NUR";
     
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
   };
+
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
