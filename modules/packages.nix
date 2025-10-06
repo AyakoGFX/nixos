@@ -95,7 +95,7 @@
     ###############################################
 
     cava
-    # gnome-font-viewer
+    gnome-font-viewer
     mission-center
     
 
@@ -133,7 +133,7 @@
     #      FILE MANAGEMENT & ARCHIVES             #
     ###############################################
  #   xarchiver
-    # file-roller
+    file-roller
     gparted
 
     ###############################################

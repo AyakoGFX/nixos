@@ -56,7 +56,7 @@
     adwaita-icon-theme  ];
 
  # Optional, hint Electron apps to use Wayland:
-environment = {
+  environment = {
   sessionVariables = {
     NIXOS_OZONE_WL = "1";
     GTK_THEME = "Adwaita-dark"; # Default GTK theme
@@ -64,6 +64,7 @@ environment = {
   };
   variables = {
     QT_QPA_PLATFORM = "wayland";
+    NIX_SKIP_BUILD_FROM_SOURCE = "1";
   };
 };
 
