@@ -10,7 +10,7 @@
     # python310          # Python 3.10 (adjust version as needed)
     # python310Packages.pip
     # python310Packages.virtualenv
-    pipx
+    # pipx
     # pip3
     # python312Packages.manim
     python313

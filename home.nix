@@ -6,7 +6,7 @@
   home.homeDirectory = "/home/ayako";
 
   # This value determines the Home Manager release that your configuration is compatible with
-  home.stateVersion = "25.05"; # Check your NixOS version
+  home.stateVersion = "25.11"; # Check your NixOS version
 
   wayland.windowManager.hyprland = {
     enable = true;

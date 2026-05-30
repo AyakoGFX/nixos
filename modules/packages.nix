@@ -11,11 +11,12 @@
   environment.systemPackages = with pkgs; [    
     # Weather app
     mousam
-    meteo
+    # meteo
     ###############################################
     #                 PDF                         #
     ###############################################
-    poppler_utils
+    # poppler_utils
+    # poppler-utils
     # pdfarranger
     # masterpdfeditor
 
@@ -70,7 +71,7 @@
     wget
     fish
     tldr
-    xorg.xkill
+    xkill
     # xdg-user-dirs
     termdown
     gdu
@@ -119,7 +120,7 @@
     telegram-desktop
     tmux
     showmethekey
-    xdragon
+    dragon-drop
     google-chrome
     # varia # Simple download manager based on aria2 and libadwaita
     aria2
@@ -154,7 +155,7 @@
     eza
     trash-cli
     ugrep
-    neofetch
+    # neofetch
     fastfetch
     killall
 
@@ -168,6 +169,7 @@
     #         DEVELOPMENT TOOLS                   #
     ###############################################
     github-desktop
+    gh
     # docker
     # docker-client
     # emacsPackages.docker

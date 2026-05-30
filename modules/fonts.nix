@@ -6,13 +6,12 @@
       noto-fonts
       iosevka
       roboto-mono
-      fira-code-nerdfont
+      nerd-fonts.fira-code
       noto-fonts-cjk-sans
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       font-awesome
       source-han-sans
-      source-han-sans-japanese
-      source-han-serif-japanese
+      source-han-serif
       nerd-fonts.jetbrains-mono
       # (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     ];

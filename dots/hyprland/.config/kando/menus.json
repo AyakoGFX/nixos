@@ -1,9 +1,7 @@
 {
+  "version": "2.3.0",
   "menus": [
     {
-      "shortcut": "Control+Space",
-      "shortcutID": "example-menu",
-      "centered": false,
       "root": {
         "type": "submenu",
         "name": "Example Menu",
@@ -222,7 +220,13 @@
             "children": []
           }
         ]
-      }
+      },
+      "shortcut": "Control+Space",
+      "shortcutID": "example-menu",
+      "centered": false,
+      "anchored": false,
+      "hoverMode": false,
+      "tags": []
     },
     {
       "root": {
@@ -534,7 +538,9 @@
       "shortcut": "",
       "shortcutID": "my-menu",
       "centered": false,
-      "anchored": false
+      "anchored": false,
+      "hoverMode": false,
+      "tags": []
     },
     {
       "root": {
@@ -547,8 +553,19 @@
       "shortcut": "",
       "shortcutID": "",
       "centered": false,
-      "anchored": false
+      "anchored": false,
+      "hoverMode": false,
+      "tags": []
     }
   ],
-  "templates": []
+  "collections": [
+    {
+      "name": "Favorites",
+      "icon": "favorite",
+      "iconTheme": "material-symbols-rounded",
+      "tags": [
+        "favs"
+      ]
+    }
+  ]
 }

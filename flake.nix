@@ -2,7 +2,7 @@
   description = "NixOS configuration with Home Manager";
 
   inputs = {
-    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.11";
     hyprland.url = "github:hyprwm/Hyprland";
     # nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     # nur.url = "github:nix-community/NUR";
@@ -38,7 +38,7 @@
             home-manager.users.ayako = import ./home.nix;
             
             # Optionally, use extraSpecialArgs to pass arguments to home.nix
-            # home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.extraSpecialArgs = { inherit inputs; };
           }
         ];
       };

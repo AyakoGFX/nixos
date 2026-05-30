@@ -17,26 +17,26 @@
     ./modules/xdg-environment.nix
     ./modules/fonts.nix
     ./modules/hardware.nix
-    ./modules/localization.nix
+#    ./modules/localization.nix
     ./modules/networking.nix
     ./modules/packages.nix
     ./modules/opentabletdriver.nix
-    # ./modules/power-management.nix # off this when Enable gnome and kde
+    ./modules/power-management.nix # off this when Enable gnome and kde
     ./modules/programs.nix
     ./modules/security.nix
     ./modules/services.nix
     ./modules/sound.nix
     ./modules/touchpad.nix
     ./modules/users.nix
-    ./modules/vm.nix
+#    ./modules/vm.nix
     ./modules/emacs.nix
-    ./modules/games.nix
+ #   ./modules/games.nix
     # ./modules/nixos-unstable.nix
     # ./modules/ps2-games.nix
     # ./modules/android.nix TODO
     # ./modules/droidcam.nix
     # ./modules/hacker.nix TODO
-    ./modules/python.nix
+  #  ./modules/python.nix
     # ./modules/ollama.nix
     # ./modules/pci.nix
   ];
@@ -75,9 +75,26 @@
     "libsoup-2.74.3"
 
   ];
+    time.timeZone = "Asia/Kolkata";
+
+  i18n = {
+    defaultLocale = "en_US.UTF-8";
+
+    extraLocaleSettings = {
+      LC_ADDRESS        = "en_US.UTF-8";
+      LC_IDENTIFICATION = "en_US.UTF-8";
+      LC_MEASUREMENT    = "en_US.UTF-8";
+      LC_MONETARY       = "en_US.UTF-8";
+      LC_NAME           = "en_US.UTF-8";
+      LC_NUMERIC        = "en_US.UTF-8";
+      LC_PAPER          = "en_US.UTF-8";
+      LC_TELEPHONE      = "en_US.UTF-8";
+      LC_TIME           = "en_US.UTF-8";
+    };
+  };
 
   # programs.home-manager.enable = true;
 
   # System State Version
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
 }
