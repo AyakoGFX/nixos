@@ -19,7 +19,7 @@
     # poppler-utils
     # pdfarranger
     # masterpdfeditor
-    okular
+    kdePackages.okular
 
     ###############################################
     #                 MUSIC                         #
