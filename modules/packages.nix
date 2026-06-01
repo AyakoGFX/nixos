@@ -19,6 +19,7 @@
     # poppler-utils
     # pdfarranger
     # masterpdfeditor
+    okular
 
     ###############################################
     #                 MUSIC                         #
