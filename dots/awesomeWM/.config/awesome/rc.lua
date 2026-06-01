@@ -340,6 +340,8 @@ root.buttons(gears.table.join(
 -- {{{ Key bindings
 
 
+
+
 globalkeys = gears.table.join(
 --   awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
 --      {description="show help", group="awesome"}),
@@ -426,6 +428,40 @@ end),
               end,
               {description = "restore minimized", group = "client"}),
 
+   -- Brightness
+awful.key(
+    { modkey }, "w",
+    function()
+        awful.spawn("brightnessctl set +5%")
+    end,
+    { description = "brightness up", group = "system" }
+),
+
+awful.key(
+    { modkey }, "s",
+    function()
+        awful.spawn("brightnessctl set 5%-")
+    end,
+    { description = "brightness down", group = "system" }
+),
+
+-- Volume
+awful.key(
+    { modkey, "Shift" }, "w",
+    function()
+        awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")
+    end,
+    { description = "volume up", group = "system" }
+),
+
+awful.key(
+    { modkey, "Shift" }, "s",
+    function()
+        awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")
+    end,
+    { description = "volume down", group = "system" }
+),
+
     -- Prompt
     awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
               {description = "run prompt", group = "launcher"}),
@@ -455,7 +491,7 @@ clientkeys = gears.table.join(
     awful.key({ modkey,}, "q",      function (c) c:kill()                                    end,
               {description = "close", group = "client"}),
 
-    awful.key({ modkey, "Shift" }, "f",  awful.client.floating.toggle                     ,
+    awful.key({ modkey,}, "v",  awful.client.floating.toggle,
               {description = "toggle floating", group = "client"}),
 
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,

@@ -20,6 +20,7 @@
     normcap
     polkit_gnome
     eog
+    copyq
 
 
     lxappearance
