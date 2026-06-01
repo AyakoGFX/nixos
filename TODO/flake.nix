@@ -1,37 +1,47 @@
 {
-  description = "NixOS configuration";
+  description = "NixOS configuration with Home Manager";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
-    # home-manager, used for managing user configuration
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.11";
+    hyprland.url = "github:hyprwm/Hyprland";
+    # nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    # nur.url = "github:nix-community/NUR";
+    
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
-      # The `follows` keyword in inputs is used for inheritance.
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }: {
+
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
-      # Change the hostname to your own
+      # Replace 'your-hostname' with your actual hostname
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
-
-          # Make home-manager a module of nixos
+          
+          {
+            nixpkgs.config.allowUnfree = true;
+          }
+          
+          # Home Manager module
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-
-            # Replace 'ayako' with your own username
             home-manager.users.ayako = import ./home.nix;
+            
+            # Optionally, use extraSpecialArgs to pass arguments to home.nix
+            home-manager.extraSpecialArgs = { inherit inputs; };
           }
         ];
       };
     };
   };
 }
-
-# https://gitlab.com/Clsmith1/nixos/-/blob/main/home.nix?ref_type=heads  

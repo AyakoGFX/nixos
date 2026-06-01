@@ -11,7 +11,7 @@ dots/
 You can run:
 #+begin_src 
 stow -t ~ hyprland
-
+stow -t ~ awesomeWM
 rm ~/.config/hypr/ && stow -t ~ hyprland/
 #+end_src
 

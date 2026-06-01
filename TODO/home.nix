@@ -1,24 +1,44 @@
-{ config, pkgs, ... }:
+{inputs, config, pkgs, ... }:
 
 {
+  # Home Manager needs a bit of information about you and the paths it should manage
   home.username = "ayako";
   home.homeDirectory = "/home/ayako";
 
-  imports = [
-    # ./home/theme.nix
-  ];
+  # This value determines the Home Manager release that your configuration is compatible with
+  home.stateVersion = "25.11"; # Check your NixOS version
 
-  # Ensure home-manager is installed
+  wayland.windowManager.hyprland = {
+    enable = true;
+    # ...
+    plugins = [
+      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
+      # ...
+    ];
+  };
+
+  # Packages to install for this user
   home.packages = with pkgs; [
-     home-manager
+    # htop
+    # neofetch
+    # Add more packages here
   ];
 
-  # Enable Home Manager
+  # Program-specific configurations
+  # programs.git = {
+    # enable = true;
+    # userName = "Your Name";
+    # userEmail = "your.email@example.com";
+  # };
+
+  # programs.bash = {
+    # enable = true;
+    # shellAliases = {
+      # ll = "ls -la";
+      # update = "sudo nixos-rebuild switch --flake /etc/nixos#your-hostname";
+    # };
+  # };
+
+  # Let Home Manager manage itself
   programs.home-manager.enable = true;
-
-  # Other configurations...
-  home.stateVersion = "24.11"; # Update if necessary
 }
-
-# https://gitlab.com/Clsmith1/nixos/-/blob/main/home.nix?ref_type=heads  
-# https://github.com/vimjoyer/nixconf

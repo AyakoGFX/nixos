@@ -16,6 +16,7 @@ in {
     ledger
     typst
     tinymist
+    lua-language-server
     # delta #Syntax-highlighting diff files git
     # emacs-lsp-booster
     # ghostscript # doc view mode Emacs

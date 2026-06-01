@@ -22,7 +22,7 @@ run flameshot &
 
 # Set keyboard repeat rate
 run xset r rate 250 60 &
-xinput --set-prop 19 "libinput Accel Speed" -0.6 &
+# xinput --set-prop 19 "libinput Accel Speed" -0.6 &
 setxkbmap -option caps:swapescape &
 
 #/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &

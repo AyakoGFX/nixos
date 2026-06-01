@@ -1,0 +1,158 @@
+-- =============================================================================
+--                   HYPRLAND OFFICIAL LUA CONFIGURATION (0.55+)
+-- =============================================================================
+
+--------------------------------------------------------------------------------
+-- 1. Main Variables & Theme Settings
+--------------------------------------------------------------------------------
+local terminal = "alacritty"
+local browser = "firefox"
+local menu = "rofi -show drun"
+local mainMod = "SUPER"
+
+--------------------------------------------------------------------------------
+-- 2. Hardware / Monitor Layout Mapping
+--------------------------------------------------------------------------------
+hl.monitor({
+    output = "eDP-1",
+    mode = "1920x1080@144",
+    position = "0x0",
+    scale = 1
+})
+
+--------------------------------------------------------------------------------
+-- 3. Global Options Setup (hl.config)
+--------------------------------------------------------------------------------
+local colors = dofile(os.getenv("HOME") .. "/.config/wal/templates/hyprland.lua")
+
+hl.config({
+    general = {
+        border_size = 2,
+        gaps_in = 3,
+        gaps_out = 3,
+        ["col.active_border"] =
+            colors.color1 .. " " ..
+            colors.color1 .. " " ..
+            colors.color2 .. " 45deg",
+        ["col.inactive_border"] = colors.background,
+        resize_on_border = true,
+        allow_tearing = false,
+        layout = "master",
+    },
+})
+    decoration = {
+        rounding = 10,
+        rounding_power = 2.0,
+        active_opacity = 1.0,
+        inactive_opacity = 0.95,
+        dim_modal = true,
+        border_part_of_window = true
+    },
+
+    ["decoration.blur"] = {
+        enabled = true,
+        size = 3,
+        passes = 1,
+        vibrancy = 0.1696
+    },
+
+    ["decoration.shadow"] = {
+        enabled = true,
+        range = 4,
+        render_power = 3,
+        color = "rgba(26,26,26,0.933)"
+    },
+
+    misc = {
+        focus_on_activate = true,
+        force_default_wallpaper = 1,
+        disable_hyprland_logo = true,
+        enable_swallow = true,
+        swallow_regex = "^(Alacritty)$",
+        swallow_exception_regex = "^(nvim|wev)$"
+    },
+
+    input = {
+        kb_layout = "us",
+        kb_options = "caps:swapescape",
+        repeat_delay = 250,
+        repeat_rate = 60,
+        follow_mouse = 1,
+        sensitivity = -0.6,
+        special_fallthrough = true,
+        focus_on_close = 1
+    },
+
+    ["input.touchpad"] = {
+        natural_scroll = true,
+        tap_to_click = true
+    },
+
+    xwayland = {
+        enabled = true,
+        use_nearest_neighbor = true
+    },
+
+    binds = {
+        scroll_event_delay = 300
+    }
+})
+
+--------------------------------------------------------------------------------
+-- 4. Autostart & Event Handlers
+--------------------------------------------------------------------------------
+-- Correctly hook into the official startup event lifecycle
+hl.on("hyprland.start", function()
+    hl.exec_cmd("hyprctl setcursor Adwaita 24")
+    hl.exec_cmd("wal -R") -- Asynchronously reapply last saved wallpaper/colors
+    hl.exec_cmd("~/.config/hypr/autorun.sh")
+
+end)
+
+hl.gesture({
+    fingers = 3,
+    direction = "horizontal",
+    action = "workspace"
+})
+
+--------------------------------------------------------------------------------
+-- 5. Functional Keybindings Matrix (hl.bind)
+--------------------------------------------------------------------------------
+-- System Utilities & Core Triggers
+hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + b", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + d", hl.dsp.exec_cmd(menu))
+
+-- Core Window Management & State Dispatchers
+hl.bind(mainMod .. " + q", hl.dsp.exec_cmd("hyprctl dispatch killactive"))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("hyprctl dispatch togglefloating"))
+hl.bind(mainMod .. " + f", hl.dsp.exec_cmd("hyprctl dispatch fullscreen"))
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("hyprctl dispatch exit"))
+
+-- Directional Focus Layout Controls
+hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "l" }))
+hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "r" }))
+hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "d" }))
+hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "u" }))
+
+-- Directional Window Positioning Controls
+hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "l" }))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "r" }))
+hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "d" }))
+hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "u" }))
+
+-- Iterative Workspace Generator (Workspaces 1 through 9)
+for i = 1, 9 do
+    hl.bind(mainMod .. " + " .. i, hl.dsp.focus({ workspace = tostring(i) }))
+    hl.bind(mainMod .. " + SHIFT + " .. i, hl.dsp.exec_cmd("hyprctl dispatch movetoworkspace " .. i))
+end
+
+-- Mouse Scroll Navigation Travel Map
+hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
+hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
+
+--------------------------------------------------------------------------------
+-- 6. Dynamic Pywal Import (Safe & Crash-Proof)
+--------------------------------------------------------------------------------
+-- Safely execute the pywal generated config using native dofile if it exists
+pcall(dofile, os.getenv("HOME") .. "/.cache/wal/hyprland.lua")

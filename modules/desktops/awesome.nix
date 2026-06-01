@@ -1,9 +1,9 @@
 { config, pkgs, lib, ... }:
 
 {
+  services.displayManager.ly.enable = true;
   services.xserver = {
     enable = true;
-    displayManager.lightdm.enable = true;
     windowManager.awesome.enable = true;
     xkb = {
       layout = "us";
