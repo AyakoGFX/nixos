@@ -238,7 +238,7 @@ local nixos_icon_widget = wibox.widget {
 
 local icon_widget = wibox.widget {
    widget = wibox.widget.imagebox,
-   image = os.getenv("HOME") .. "/.config/awesome/white.png", -- Full path
+   image = os.getenv("HOME") .. "/.config/awesome/hindu-white.png", -- Full path
     resize = true,  -- Enable resizing if needed
     forced_width = 22,  -- Set width
     forced_height = 22  -- Set height
