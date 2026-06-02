@@ -100,6 +100,7 @@
     gnome-font-viewer
     mission-center
     obsidian
+    # proton-vpn
     
     ###############################################
     #         AUDIO & VIDEO TOOLS                 #
