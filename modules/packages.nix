@@ -99,8 +99,7 @@
     cava
     gnome-font-viewer
     mission-center
-    
-
+    obsidian
     
     ###############################################
     #         AUDIO & VIDEO TOOLS                 #
