@@ -17,11 +17,11 @@
     ./modules/xdg-environment.nix
     ./modules/fonts.nix
     ./modules/hardware.nix
-#    ./modules/localization.nix
+    ./modules/localization.nix
     ./modules/networking.nix
     ./modules/packages.nix
     ./modules/opentabletdriver.nix
-    ./modules/power-management.nix # off this when Enable gnome and kde
+    # ./modules/power-management.nix # off this when Enable gnome and kde
     ./modules/programs.nix
     ./modules/security.nix
     ./modules/services.nix
@@ -73,26 +73,8 @@
 
   nixpkgs.config.permittedInsecurePackages = [
     "libsoup-2.74.3"
-    "electron-39.8.10"
 
   ];
-    time.timeZone = "Asia/Kolkata";
-
-  i18n = {
-    defaultLocale = "en_US.UTF-8";
-
-    extraLocaleSettings = {
-      LC_ADDRESS        = "en_US.UTF-8";
-      LC_IDENTIFICATION = "en_US.UTF-8";
-      LC_MEASUREMENT    = "en_US.UTF-8";
-      LC_MONETARY       = "en_US.UTF-8";
-      LC_NAME           = "en_US.UTF-8";
-      LC_NUMERIC        = "en_US.UTF-8";
-      LC_PAPER          = "en_US.UTF-8";
-      LC_TELEPHONE      = "en_US.UTF-8";
-      LC_TIME           = "en_US.UTF-8";
-    };
-  };
 
   # programs.home-manager.enable = true;
 
