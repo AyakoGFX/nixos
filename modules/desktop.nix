@@ -1,9 +1,9 @@
 { pkgs, lib, config, ... }:
 let
-  enableAwesomeWM = true;
+  enableAwesomeWM = false;
   enablehyprland = false;
   enableGNOME = false; # when enable this off power-management.nix in configuration.nix
-  enableKDE = false; # when enable this off power-management.nix in configuration.nix
+  enableKDE = true; # when enable this off power-management.nix in configuration.nix
   enableIceWM = false;
   enableNiri = false;
   enableFvwm3 = false;  # when enable this off power-management.nix in configuration.nix

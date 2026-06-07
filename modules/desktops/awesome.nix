@@ -21,6 +21,15 @@
     polkit_gnome
     eog
     copyq
+    
+    # cboomer https://github.com/laserattack/cboomer.git
+    libx11
+    libxext
+    libxrandr
+    libGL
+    libGLU   # optional but often useful
+    glew
+    mesa-demos
 
 
     lxappearance

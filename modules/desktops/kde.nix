@@ -1,7 +1,8 @@
 { config, pkgs, lib, ... }:
 
 {
-  services.displayManager.sddm.enable = true;
+  # services.displayManager.sddm.enable = true;
+  services.displayManager.plasma-login-manager.enable = true;
   services.desktopManager.plasma6.enable = true;
 
   # Excluding some KDE Plasma applications from the default install

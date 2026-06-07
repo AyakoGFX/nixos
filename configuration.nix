@@ -21,15 +21,16 @@
     ./modules/networking.nix
     ./modules/packages.nix
     ./modules/opentabletdriver.nix
-    ./modules/power-management.nix # off this when Enable gnome and kde
+    # ./modules/power-management.nix # off this when Enable gnome and kde
     ./modules/programs.nix
     ./modules/security.nix
     ./modules/services.nix
     ./modules/sound.nix
     ./modules/touchpad.nix
     ./modules/users.nix
-#    ./modules/vm.nix
+    ./modules/vm.nix
     ./modules/emacs.nix
+    ./modules/wine.nix
  #   ./modules/games.nix
     # ./modules/nixos-unstable.nix
     # ./modules/ps2-games.nix
