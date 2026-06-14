@@ -112,6 +112,8 @@
     pulseaudioFull
     pavucontrol
     obs-studio
+    # lan-mouse
+    drawy
 
     ###############################################
     #      INTERNET & COMMUNICATION               #
