@@ -11,9 +11,14 @@
     # konsole
     # oxygen
   ];
-  
+  environment.systemPackages = with pkgs; [
+    
+  ];  
 }
-  
+# kde export setting / preference bash script
+# https://gitlab.com/cscs/transfuse   
+
+
 # rm -rf ~/.config/kde*
 # rm -rf ~/.config/plasma*
 # rm -rf ~/.cache/plasma*
