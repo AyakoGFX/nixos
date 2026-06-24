@@ -13,9 +13,9 @@
     # pipx
     # pip3
     # python312Packages.manim
-    python313
-    python313Packages.pip
-    #python313Packages.uv
-    virtualenv
+    # python313
+    # python313Packages.pip
+    python313Packages.uv
+    # virtualenv
   ];
 }

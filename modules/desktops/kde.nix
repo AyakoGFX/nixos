@@ -13,8 +13,16 @@
   ];
   environment.systemPackages = with pkgs; [
     
-  ];  
+  ];
+  i18n.inputMethod = {
+    enabled = "fcitx5";
+    fcitx5.addons = with pkgs; [
+      fcitx5-m17n
+    ];
+  };
 }
+
+
 # kde export setting / preference bash script
 # https://gitlab.com/cscs/transfuse   
 

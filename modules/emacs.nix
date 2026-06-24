@@ -8,14 +8,14 @@ let
 in {
   environment.systemPackages = with pkgs; [
     myEmacs
-    uemacs # bin name = em
-    texliveFull
-    zathura
+    # uemacs # bin name = em
+    # texliveFull
+    # zathura
     espeak
     piper-tts
-    ledger
-    typst
-    tinymist
+    # ledger
+    # typst
+    # tinymist
     lua-language-server
     # delta #Syntax-highlighting diff files git
     # emacs-lsp-booster
@@ -26,27 +26,27 @@ in {
     clang-tools
 
     # Go Lang Configuration
-    go
-    gopls
-    typescript-language-server
+    # go
+    # gopls
+    # typescript-language-server
 
     # Python Lang Configuration
-    python312Packages.python-lsp-server
-    python312Packages.black
+    # python312Packages.python-lsp-server
+    # python312Packages.black
 
     # <spell checking>
     hunspell
     hunspellDicts.en-us-large
     tree-sitter
-    harper # not working
+    # harper # not working
     # emacsPackages.jinx
     # <end>
     exiftool # for hacker-man.el
 
     # <Clojure>
-    jdk21             # Java 21 (LTS, latest and stable)
+    # jdk21             # Java 21 (LTS, latest and stable)
     # clojure           # Clojure CLI tools
-    clj-kondo         # Linter
+    # clj-kondo         # Linter
     # clojure-lsp       # LSP server for Emacs
     # leiningen         # Optional: if you want to use Lein projects
 

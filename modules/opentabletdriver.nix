@@ -7,7 +7,6 @@
 {
   hardware.opentabletdriver.enable = true;
   environment.systemPackages = with pkgs; [
-  osu-lazer
+  # osu-lazer
   ];
-
 }

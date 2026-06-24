@@ -10,7 +10,7 @@
   };
   environment.systemPackages = with pkgs; [    
     # Weather app
-    mousam
+    # mousam
     # meteo
     ###############################################
     #                 PDF                         #
@@ -20,6 +20,8 @@
     # pdfarranger
     # masterpdfeditor
     kdePackages.okular
+    # typst
+    # typstwriter
 
     ###############################################
     #                 MUSIC                         #
